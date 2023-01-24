@@ -18,7 +18,45 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header></header>
+    <section class="hero container">
+      <header class="header">
+        <div>
+          <nav class="navigation">
+            <a href="index.html" class="logo">
+              <img src="./images/mobile/лого.png" alt="Logo" />
+            </a>
+            <button
+              type="button"
+              class="mobile-menu-btn mobile-btn"
+              aria-expanded="false"
+              data-menu-open
+            >
+              <svg
+                class="mobile-menu-btn__icon"
+                width="32"
+                height="32"
+                aria-label="Перемикач мобільного меню"
+              >
+                <use href="./images/icons.svg#icon-mobile-menu"></use>
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </header>
+      <h1 class="title-text">ice cream made with passion</h1>
+      <div class="flex-box">
+        <button type="button" class="button green-btn hero-btn">
+          Products
+        </button>
+        <a href="">How it’s made?</a>
+      </div>
+      <img
+        src="./images/mobile/ice-cream.png"
+        alt="Морозиво"
+        class="hero__img"
+      />
+    </section>
+
     <main></main>
     <footer>
       <address></address>

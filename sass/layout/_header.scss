@@ -1,0 +1,24 @@
+.header {
+  padding-top: 12px;
+  margin-bottom: 50px;
+}
+.navigation {
+  @include flex(flex, space-between, center);
+}
+.mobile-btn {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+.mobile-menu-btn {
+  display: inline-block;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobile-menu-btn__icon {
+  fill: #fff;
+}

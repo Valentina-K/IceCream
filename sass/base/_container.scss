@@ -14,6 +14,14 @@
     width: 1200px;
   }
 }
+.flex-container {
+  @include flex(flex, space-between, center);
+}
+.flex-box {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
 .section {
   padding-top: 60px;
   padding-bottom: 60px;

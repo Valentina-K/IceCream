@@ -1,0 +1,18 @@
+.hero {
+  background-color: var(--green-bg-color);
+}
+.title-text {
+  width: 248px;
+  margin-bottom: 32px;
+  font-family: var(--second-font-family);
+  font-style: normal;
+  @include font(26px, 400, 33px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--contrast-color);
+}
+
+.hero__img {
+  margin-left: 84px;
+}

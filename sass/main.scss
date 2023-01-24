@@ -3,5 +3,10 @@
 @import "./utils/mixins";
 
 @import "./base/common";
-@import "./base/body";
 @import "./base/container";
+
+@import "./components/button";
+@import "./components/cards";
+
+@import "./layout/header";
+@import "./layout/hero";
