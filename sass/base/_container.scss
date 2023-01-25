@@ -14,6 +14,14 @@
     width: 1200px;
   }
 }
+
+.odd {
+  background-color: var(--green-bg-color);
+}
+
+.even {
+  background-image: url(../../images/mobile/ФОН.jpg);
+}
 .flex-container {
   @include flex(flex, space-between, center);
 }
