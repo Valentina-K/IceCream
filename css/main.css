@@ -112,13 +112,6 @@ ul {
   border: 2px solid #f8d24e;
 }
 
-.hero-btn {
-  width: 108px;
-  height: 38px;
-  border-radius: 8px;
-  margin-right: 12px;
-}
-
 .address-card {
   width: 280px;
   height: 412px;
@@ -169,7 +162,7 @@ ul {
   background-color: var(--green-bg-color);
 }
 
-.title-text {
+.hero__title {
   width: 248px;
   margin-bottom: 32px;
   font-family: var(--second-font-family);
@@ -180,6 +173,39 @@ ul {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--contrast-color);
+}
+
+.big {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.03125;
+}
+
+.hero__btn-link {
+  display: inline-block;
+  padding-top: 8px;
+  text-align: center;
+  width: 108px;
+  height: 38px;
+  border-radius: 8px;
+  margin-right: 12px;
+  border: 2px solid var(--accent-color);
+  color: #000;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.hero__link {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 
 .hero__img {

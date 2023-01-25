@@ -1,7 +1,7 @@
 .hero {
   background-color: var(--green-bg-color);
 }
-.title-text {
+.hero__title {
   width: 248px;
   margin-bottom: 32px;
   font-family: var(--second-font-family);
@@ -11,6 +11,32 @@
   text-transform: uppercase;
 
   color: var(--contrast-color);
+}
+.big {
+  @include font(32px, 400, 33px);
+}
+
+.hero__btn-link {
+  display: inline-block;
+  padding-top: 8px;
+  text-align: center;
+  width: 108px;
+  height: 38px;
+  border-radius: 8px;
+  margin-right: 12px;
+  border: 2px solid var(--accent-color);
+  color: #000;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  @include font(12px, 600, 15px);
+}
+
+.hero__link {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  @include font(12px, 600, 15px);
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 
 .hero__img {
