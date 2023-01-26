@@ -4,6 +4,9 @@
   --green-bg-color: #84a178;
   --text-color: #131313;
   --accent-color: #f8d24e;
+  --milk-card-bg-color: #d6936d;
+  --ice-cream-card-bg-color: #aec6a5;
+  --coffee-card-bg-color: #efd478;
   --main-font-family: Montserrat, sans-serif;
   --second-font-family: Seymour One, sans-serif;
 }
@@ -130,9 +133,80 @@ ul {
 }
 
 .product-card {
+  position: relative;
   width: 280px;
   height: 420px;
+  padding-top: 124px;
+  margin-bottom: 168px;
   border-radius: 24px;
+  font-family: var(--main-font-family);
+  color: var(--text-color);
+  letter-spacing: 0.04em;
+}
+
+.milkshake {
+  background-color: var(--milk-card-bg-color);
+}
+
+.ice-cream {
+  background-color: var(--ice-cream-card-bg-color);
+}
+
+.ice-coffee {
+  background-color: var(--coffee-card-bg-color);
+}
+
+.product-card__img {
+  position: absolute;
+  top: -108px;
+  left: 40px;
+  border-radius: 100px;
+}
+
+.circl {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -98px;
+  left: 40px;
+  border-radius: 100px;
+}
+
+.circl-ice-cream {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
+
+.circl-coffee {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+
+.circl-milkshake {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+
+.product-card__title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.product-card__text {
+  margin: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7857142857;
+}
+
+.product-card__arrow {
+  margin-left: 120px;
+  margin-bottom: 16px;
 }
 
 .title-first-line {
@@ -248,4 +322,8 @@ ul {
 
 .hero__img {
   margin-left: 84px;
+}
+
+.product-title {
+  margin-bottom: 148px;
 }/*# sourceMappingURL=main.css.map */

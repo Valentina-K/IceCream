@@ -42,6 +42,40 @@
             </button>
           </nav>
         </div>
+        <div class="mobile-menu" data-menu>
+          <button
+            class="mobile-menu__close-btn mobile-menu-btn mobile-btn"
+            data-menu-close
+          >
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#close-menu-icon"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list mobile-nav-list list">
+            <li class="mobile-menu-list__item">
+              <a href="#hero" class="mobile-menu-list__link active link"
+                >Home</a
+              >
+            </li>
+            <li class="mobile-menu-list__item">
+              <a href="#advantage" class="mobile-menu-list__link link"
+                >How it's make?</a
+              >
+            </li>
+            <li class="mobile-menu-list__item">
+              <a href="#products" class="mobile-menu-list__link link"
+                >Our products</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-list mobile-address-list list">
+            <li class="mobile-menu-list__item">
+              <a href="#contact" class="mobile-menu-list__link-tel link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </header>
       <h1 class="hero__title">
         ice cream made with <span class="big">passion</span>
@@ -55,46 +89,58 @@
       />
     </section>
     <section id="products" class="even container section">
-      <h2>
+      <h2 class="product-title">
         <p class="title-first-line">100% natural</p>
         <p class="title-second-line">Products</p>
       </h2>
       <ul class="product-list list">
         <li class="product-list__item">
-          <div>
-            <img src="./images/mobile/ice-cream-ellips.jpg" />
-            <h3>Ice Cream</h3>
-            <p>
+          <div class="product-card ice-cream">
+            <div class="circl circl-ice-cream"></div>
+            <img
+              src="./images/mobile/ice-cream-ellips.jpg"
+              class="product-card__img"
+            />
+            <h3 class="product-card__title">Ice Cream</h3>
+            <p class="product-card__text">
               Soft ice cream with a delicate taste. Made with milk, cream, sugar
               and natural stabilizer
             </p>
-            <svg width="40" height="16">
+            <svg width="40" height="16" class="product-card__arrow">
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </div>
         </li>
         <li class="product-list__item">
-          <div>
-            <img src="./images/mobile/ice-coffee.jpg" />
-            <h3>Ice Coffee</h3>
-            <p>
+          <div class="product-card ice-coffee">
+            <div class="circl circl-coffee"></div>
+            <img
+              src="./images/mobile/ice-coffee.jpg"
+              class="product-card__img"
+            />
+            <h3 class="product-card__title">Ice Coffee</h3>
+            <p class="product-card__text">
               Fragrant invigorating drink created from 100% natural ingredients
               without the use of preservatives and flavor enhancers
             </p>
-            <svg width="40" height="16">
+            <svg width="40" height="16" class="product-card__arrow">
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </div>
         </li>
         <li class="product-list__item">
-          <div>
-            <img src="./images/mobile/milkshake.jpg" />
-            <h3>Milkshakes</h3>
-            <p>
+          <div class="product-card milkshake">
+            <div class="circl circl-milkshake"></div>
+            <img
+              src="./images/mobile/milkshake.jpg"
+              class="product-card__img"
+            />
+            <h3 class="product-card__title">Milkshakes</h3>
+            <p class="product-card__text">
               Sweet drinks based on milk and ice cream, supplemented with
               syrups, fruits, berries and other sweets of your choice
             </p>
-            <svg width="40" height="16">
+            <svg width="40" height="16" class="product-card__arrow">
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </div>
@@ -107,6 +153,7 @@
         <p class="title-second-line title-odd one-word">how it’s made?</p>
       </h2>
     </section>
+    <section id="contact"></section>
     <main></main>
     <footer>
       <address></address>
