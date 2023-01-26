@@ -35,7 +35,7 @@
                 class="mobile-menu-btn__icon"
                 width="32"
                 height="32"
-                aria-label="Перемикач мобільного меню"
+                aria-label="Switch mobile menu"
               >
                 <use href="./images/icons.svg#icon-mobile-menu"></use>
               </svg>
@@ -43,38 +43,41 @@
           </nav>
         </div>
         <div class="mobile-menu" data-menu>
-          <button
-            class="mobile-menu__close-btn mobile-menu-btn mobile-btn"
-            data-menu-close
-          >
-            <svg class="mobile-menu__close-icon" width="40" height="40">
-              <use href="./images/icons.svg#close-menu-icon"></use>
-            </svg>
-          </button>
+          <div class="mobile-menu__header">
+            <a href="index.html" class="logo">
+              <img src="./images/mobile/лого.png" alt="Logo" />
+            </a>
+            <button class="mobile-menu-btn mobile-btn" data-menu-close>
+              <svg class="mobile-menu__close-icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
           <ul class="mobile-menu-list mobile-nav-list list">
             <li class="mobile-menu-list__item">
-              <a href="#hero" class="mobile-menu-list__link active link"
+              <a href="./index.html" class="mobile-menu-list__link active link"
                 >Home</a
               >
             </li>
             <li class="mobile-menu-list__item">
-              <a href="#advantage" class="mobile-menu-list__link link"
+              <a
+                href="./index.html#advantage"
+                class="mobile-menu-list__link link"
                 >How it's make?</a
               >
             </li>
             <li class="mobile-menu-list__item">
-              <a href="#products" class="mobile-menu-list__link link"
+              <a
+                href="./index.html#products"
+                class="mobile-menu-list__link link"
                 >Our products</a
               >
             </li>
-          </ul>
-          <ul class="mobile-menu-list mobile-address-list list">
             <li class="mobile-menu-list__item">
-              <a href="#contact" class="mobile-menu-list__link-tel link"
-                >Contact</a
-              >
+              <a href="#contact" class="mobile-menu-list__link link">Contact</a>
             </li>
           </ul>
+          <button class="button yellow-btn mobile-menu-button">Buy now</button>
         </div>
       </header>
       <h1 class="hero__title">
@@ -153,11 +156,13 @@
         <p class="title-second-line title-odd one-word">how it’s made?</p>
       </h2>
     </section>
-    <section id="contact"></section>
-    <main></main>
+    <section id="reviews" class="container section even"></section>
+    <section id="contact" class="container section odd"></section>
     <footer>
       <address></address>
       <div class="button__group"></div>
     </footer>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
