@@ -36,15 +36,14 @@
     
   refs.openMenuBtn.addEventListener('click', toggleModal);
   refs.closeMenuBtn.addEventListener('click', toggleModal);
-  /* refs.link.addEventListener('click', toggleActiveLink); */
+  refs.link.addEventListener('click', toggleActiveLink);
     
     function toggleModal() {
     refs.menu.classList.toggle('is-open');
     }
-
-  /*   function toggleActiveLink(e) {
-        console.log(e);
-        const actLink = e.target;
+function toggleActiveLink(e) {
+    const actLink = e.target;
     actLink.classList.toggle('active');
-    }   */  
+    refs.menu.classList.toggle('is-open');
+    }  
 })();
