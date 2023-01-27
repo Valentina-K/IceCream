@@ -10,15 +10,16 @@
   min-width: 280px;
   height: 420px;
   padding-top: 124px;
-  margin-bottom: 168px;
   border-radius: 24px;
-
+  margin-bottom: 168px;
   font-family: var(--main-font-family);
   color: var(--text-color);
   letter-spacing: 0.04em;
 }
+
 .milkshake {
   background-color: var(--milk-card-bg-color);
+  margin-bottom: 0;
 }
 .ice-cream {
   background-color: var(--ice-cream-card-bg-color);
@@ -29,7 +30,8 @@
 .product-card__img {
   position: absolute;
   top: -108px;
-  left: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 100px;
 }
 .circl {
@@ -37,7 +39,8 @@
   width: 200px;
   height: 200px;
   top: -98px;
-  left: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 100px;
 }
 .circl-ice-cream {
@@ -74,11 +77,15 @@
   text-transform: uppercase;
 }
 .product-card__text {
-  margin: 0 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
   text-align: center;
   @include font(14px, 400, 25px);
 }
 .product-card__arrow {
-  margin-left: 120px;
-  margin-bottom: 16px;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  bottom: 16px;
 }
