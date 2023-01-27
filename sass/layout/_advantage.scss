@@ -1,0 +1,82 @@
+.advantage-title {
+  margin-bottom: 32px;
+}
+.advantage-circle {
+  width: 278px;
+  height: 278px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 140px;
+}
+.advantage-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  margin-top: -256px;
+}
+.advantage-text {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--main-font-family);
+  @include font(12px, 400, 21px);
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: var(--contrast-color);
+}
+.text-two-pice {
+  @include font(12px, 400, 19.5px);
+  margin-bottom: 24px;
+}
+.advantage-btn {
+  width: 164px;
+  @include font(14px, 600, 18px);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+.icon-thumb {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  background: var(--accent-color);
+  border-radius: 25px;
+}
+.icons {
+  transform: translate(-50%, -50%);
+  margin-left: 50%;
+  margin-top: 50%;
+}
+.advantage-title-description {
+  font-family: var(--main-font-family);
+  @include font(36px, 700, 44px);
+  margin-bottom: 16px;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--contrast-color);
+}
+.description {
+  font-family: var(--main-font-family);
+  @include font(12px, 400, 20px);
+  width: 230px;
+  margin-bottom: 22px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  color: var(--contrast-color);
+}

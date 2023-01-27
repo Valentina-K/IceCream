@@ -127,6 +127,12 @@ ul {
   border: 2px solid #f8d24e;
 }
 
+/* .btn-icon::after {
+  content: "";
+  margin-left: 4px;
+  vertical-align: middle;
+}
+ */
 .address-card {
   min-width: 280px;
   height: 412px;
@@ -465,4 +471,117 @@ ul {
 
 .product-title {
   margin-bottom: 148px;
+}
+
+.advantage-title {
+  margin-bottom: 32px;
+}
+
+.advantage-circle {
+  width: 278px;
+  height: 278px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 140px;
+}
+
+.advantage-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  margin-top: -256px;
+}
+
+.advantage-text {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--main-font-family);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.75;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--contrast-color);
+}
+
+.text-two-pice {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.625;
+  margin-bottom: 24px;
+}
+
+.advantage-btn {
+  width: 164px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2857142857;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+
+.icon-thumb {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  background: var(--accent-color);
+  border-radius: 25px;
+}
+
+.icons {
+  transform: translate(-50%, -50%);
+  margin-left: 50%;
+  margin-top: 50%;
+}
+
+.advantage-title-description {
+  font-family: var(--main-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2222222222;
+  margin-bottom: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--contrast-color);
+}
+
+.description {
+  font-family: var(--main-font-family);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6666666667;
+  width: 230px;
+  margin-bottom: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--contrast-color);
+}
+
+.reviews-header {
+  width: 280px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  background-image: url("../../images/mobile/brooke-lark.jpg");
+}
+
+.reviews-circle {
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  background: #6e6e6e;
+  border-radius: 44px;
+  background-image: url("../../images/mobile/girl.jpg");
 }/*# sourceMappingURL=main.css.map */
