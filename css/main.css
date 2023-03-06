@@ -8,6 +8,7 @@
   --milk-card-bg-color: #d6936d;
   --ice-cream-card-bg-color: #aec6a5;
   --coffee-card-bg-color: #efd478;
+  --dots-color: #d9d9d9;
   --main-font-family: Montserrat, sans-serif;
   --second-font-family: Seymour One, sans-serif;
 }
@@ -566,11 +567,19 @@ ul {
   color: var(--contrast-color);
 }
 
+.reviews {
+  position: absolute;
+  padding-bottom: 60px;
+}
+
 .reviews-header {
+  position: relative;
+  top: -32px;
   width: 280px;
   height: 130px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 80px;
   border-radius: 8px;
   background-image: url("../../images/mobile/brooke-lark.jpg");
 }
@@ -584,4 +593,72 @@ ul {
   background: #6e6e6e;
   border-radius: 44px;
   background-image: url("../../images/mobile/girl.jpg");
+}
+
+.review-box {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  padding: 35px 39px;
+  border-radius: 10px;
+  background: var(--green-bg-color);
+}
+
+.review-text {
+  width: 202px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--contrast-color);
+  text-align: center;
+  font-family: var(--main-font-family);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2.5833333333;
+}
+
+.review-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.85;
+  color: var(--text-color);
+  font-family: var(--main-font-family);
+}
+
+.review-nav {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.dots {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--dots-color);
+}
+
+.dots.active {
+  background: var(--green-bg-color);
+}
+
+.dots:not(:last-child) {
+  margin-right: 18px;
+}
+
+.gallery {
+  display: none;
+}
+
+.gallery.active {
+  display: block;
+  animation: fadeImg 0.8s;
 }/*# sourceMappingURL=main.css.map */

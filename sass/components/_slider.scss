@@ -1,0 +1,28 @@
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.dots {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--dots-color);
+}
+.dots.active {
+  background: var(--green-bg-color);
+}
+.dots:not(:last-child) {
+  margin-right: 18px;
+}
+.gallery {
+  display: none;
+}
+.gallery.active {
+  display: block;
+  animation: fadeImg 0.8s;
+}

@@ -1,8 +1,15 @@
+.reviews {
+  position: absolute;
+  padding-bottom: 60px;
+}
 .reviews-header {
+  position: relative;
+  top: -32px;
   width: 280px;
   height: 130px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 80px;
   border-radius: 8px;
   background-image: url("../../images/mobile/brooke-lark.jpg");
 }
@@ -15,4 +22,32 @@
   background: #6e6e6e;
   border-radius: 44px;
   background-image: url("../../images/mobile/girl.jpg");
+}
+.review-box {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  padding: 35px 39px;
+  border-radius: 10px;
+  background: var(--green-bg-color);
+}
+.review-text {
+  width: 202px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--contrast-color);
+  text-align: center;
+  font-family: var(--main-font-family);
+  @include font(12px, 400, 31px);
+}
+.review-title {
+  text-align: center;
+  @include font(20px, 500, 37px);
+  color: var(--text-color);
+  font-family: var(--main-font-family);
+}
+.review-nav {
+  display: flex;
+  justify-content: center;
 }
