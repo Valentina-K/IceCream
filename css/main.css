@@ -405,6 +405,39 @@ ul {
   color: var(--text-color);
 }
 
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.dots {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--dots-color);
+}
+
+.dots.active {
+  background: var(--green-bg-color);
+}
+
+.dots:not(:last-child) {
+  margin-right: 18px;
+}
+
+.gallery {
+  display: none;
+  padding-top: 176px;
+}
+
+.gallery.active {
+  display: block;
+  animation: fadeImg 0.8s;
+}
+
 .header {
   padding-top: 12px;
   margin-bottom: 50px;
@@ -568,18 +601,22 @@ ul {
 }
 
 .reviews {
-  position: absolute;
   padding-bottom: 60px;
 }
 
 .reviews-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.reviews-img {
   position: relative;
   top: -32px;
   width: 280px;
   height: 130px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 80px;
   border-radius: 8px;
   background-image: url("../../images/mobile/brooke-lark.jpg");
 }
@@ -631,34 +668,20 @@ ul {
   justify-content: center;
 }
 
-@keyframes fadeImg {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.dots {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--dots-color);
+.contacts-list {
+  margin-bottom: 20px;
 }
 
-.dots.active {
-  background: var(--green-bg-color);
-}
-
-.dots:not(:last-child) {
-  margin-right: 18px;
-}
-
-.gallery {
-  display: none;
-}
-
-.gallery.active {
+.contacts-list__item {
   display: block;
-  animation: fadeImg 0.8s;
+  border-radius: 24px;
+  padding-left: 32px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  background-color: var(--contrast-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-bottom: 16px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+.contacts-list {
+  margin-bottom: 20px;
+}
+
+.contacts-list__item {
+  border-radius: 24px;
+  padding-left: 32px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  background-color: var(--contrast-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-bottom: 16px;
+}/*# sourceMappingURL=contacts.css.map */
