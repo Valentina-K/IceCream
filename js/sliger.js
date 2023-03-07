@@ -4,14 +4,21 @@ const nav = document.querySelectorAll('.dots')/*
 const nextItem = document.querySelector('.next');
 const previousItem = document.querySelector('.previous'); */
 let index = 0;
-
+nav.forEach(navItem => navItem.addEventListener('click', showItem));
 function showItem(e) {
-    console.log(e);
+  index = Number(e.target.id);
+  items.forEach(item => item.classList.remove('active'));
+  items[index].classList.add('active');
+  nav.forEach(navItem => navItem.classList.remove('active'))
+  nav[index].classList.add('active');
 }
 
-nav.map(navItem => navItem.addEventListener('click', showItem));
+/* nav.map(navItem => {
+  console.log(navItem)
+  navItem.addEventListener('click', showItem)
+}); */
 
-function showNextItem() {
+/* function showNextItem() {
   items[index].classList.remove('active');
 
   if(index < itemCount - 1) {
@@ -33,9 +40,9 @@ function showPreviousItem() {
   }
 
   items[index].classList.add('active');
-}
+} */
 
-function keyPress(e) {
+/* function keyPress(e) {
   e = e || window.event;
   
   if (e.keyCode == '37') {
@@ -43,8 +50,8 @@ function keyPress(e) {
   } else if (e.keyCode == '39') {
     showNextItem();
   }
-}
+} */
 
-nextItem.addEventListener('click', showNextItem);
+/* nextItem.addEventListener('click', showNextItem);
 previousItem.addEventListener('click', showPreviousItem);
-document.addEventListener('keydown', keyPress);
+document.addEventListener('keydown', keyPress); */
