@@ -85,15 +85,19 @@
       </h1>
       <a href="#products" class="link hero__btn-link">Products</a>
       <a href="#advantage" class="link hero__link">How it’s made?</a>
-      <img
+      <div class="hero-images">
+        <img src="./images/mobile/points.png" alt="Крапки" class="hero-images__points">
+        <img
         src="./images/mobile/ice-cream.png"
         alt="Морозиво"
-        class="hero__img"
-      />
+        class="hero-images__ice"
+      />      
+      </div>
+      
     </section>
     <section id="products" class="even container section">
-      <h2 class="product-title">
-        <p class="title-first-line">100% natural</p>
+      <label for="product-title" class="title-first-line">100% natural</label>
+      <h2 class="product-title" id="product-title">        
         <p class="title-second-line">Products</p>
       </h2>
       <ul class="product-list list">
@@ -103,16 +107,18 @@
             <img
               src="./images/mobile/ice-cream-ellips.jpg"
               class="product-card__img"
-              alt="ice-cream"
+              alt=""
             />
             <h3 class="product-card__title">Ice Cream</h3>
             <p class="product-card__text">
               Soft ice cream with a delicate taste. Made with milk, cream, sugar
               and natural stabilizer
             </p>
-            <svg width="40" height="16" class="product-card__arrow">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
+            <button type="button" class="modal-open-btn" data-modal-open>
+              <svg width="40" height="16" class="product-card__arrow" >
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
           </div>
         </li>
         <li class="product-list__item">
@@ -121,16 +127,18 @@
             <img
               src="./images/mobile/ice-coffee.jpg"
               class="product-card__img"
-              alt="ice-coffee"
+              alt=""
             />
             <h3 class="product-card__title">Ice Coffee</h3>
             <p class="product-card__text">
               Fragrant invigorating drink created from 100% natural ingredients
               without the use of preservatives and flavor enhancers
             </p>
-            <svg width="40" height="16" class="product-card__arrow">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
+            <button type="button" class="modal-open-btn" data-modal-open>
+              <svg width="40" height="16" class="product-card__arrow">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
           </div>
         </li>
         <li class="product-list__item">
@@ -139,19 +147,108 @@
             <img
               src="./images/mobile/milkshake.jpg"
               class="product-card__img"
-              alt="milkshake"
+              alt=""
             />
             <h3 class="product-card__title">Milkshakes</h3>
             <p class="product-card__text">
               Sweet drinks based on milk and ice cream, supplemented with
               syrups, fruits, berries and other sweets of your choice
             </p>
-            <svg width="40" height="16" class="product-card__arrow">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
+            <button type="button" class="modal-open-btn" data-modal-open>
+              <svg width="40" height="16" class="product-card__arrow">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
           </div>
         </li>
       </ul>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal-product card-modal" >
+          <button class="mobile-menu-btn mobile-btn close-btn" data-modal-close>
+            <svg class="modal-product__close-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h3 class="modal-product__title">Chololate icecream</h3>
+          <div class="modal-product__image">
+            <div class="modal-product__circl"></div>
+            <img
+              src="./images/mobile/ingredients.jpg"
+              class="modal-product__circl-img"
+              alt=""
+            />
+          </div>
+          <ul class="modal-product-list list">
+            <li class="modal-product-list__item">
+              <div class="modal-product__component">
+                <div class="component-circl">
+                  320
+                </div>
+                <p class="component-text">kcal</p>
+              </div>
+            </li>
+            <li class="modal-product-list__item">
+              <div class="modal-product__component">
+                <div class="component-circl">
+                  4g
+                </div>
+                <p class="component-text">Prote...</p>
+              </div>
+            </li>
+            <li class="modal-product-list__item">
+              <div class="modal-product__component">
+                <div class="component-circl">
+                  8.2g
+                </div>
+                <p class="component-text">Fats</p>
+              </div>
+            </li>
+            <li class="modal-product-list__item">
+              <div class="modal-product__component">
+                <div class="component-circl">
+                  40.4g
+                </div>
+                <p class="component-text">Carbs</p>
+              </div>
+            </li>
+          </ul>
+          <table class="table">
+            <caption class="table-caption">Ingredients</caption>
+            <tbody class="table-body">
+              <tr>
+                <td>Milk</td>
+                <td>100ml</td>
+              </tr>
+              <tr>
+                <td>Belgian chocolate</td>
+                <td>20g</td>
+              </tr>
+              <tr>
+                <td>Cream</td>
+                <td>150ml</td>
+              </tr>
+              <tr>
+                <td>Cocoa powder</td>
+                <td>30g</td>
+              </tr>
+              <tr>
+                <td>Sugar</td>
+                <td>40g</td>
+              </tr>
+              <tr>
+                <td>Vanilla sugar</td>
+                <td>10g</td>
+              </tr>
+            </tbody>
+          </table>
+          <form class="contact-form">
+            <input type="text" placeholder="Name" class="contact-form__text">
+            <input type="text" placeholder="Phone" class="contact-form__text">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Comment" class="contact-form__text area"></textarea>
+            <button type="submit" class="form-btn yellow-btn">Submit</button>
+          </form>
+        </div>
+      </div>
     </section>
     <section id="about"></section>
     <section id="advantages" class="odd container section">
@@ -304,7 +401,7 @@
       <address></address>
       <div class="button__group"></div>
     </footer>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/sliger.js"></script>
   </body>

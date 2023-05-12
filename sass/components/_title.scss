@@ -2,6 +2,9 @@
   font-family: var(--main-font-family);
   @include font(18px, 800, 22px);
 
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   text-transform: uppercase;
 
