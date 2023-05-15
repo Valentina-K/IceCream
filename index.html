@@ -84,7 +84,7 @@
         ice cream made with <span class="big">passion</span>
       </h1>
       <a href="#products" class="link hero__btn-link">Products</a>
-      <a href="#advantage" class="link hero__link">How it’s made?</a>
+      <a href="#about" class="link hero__link">How it’s made?</a>
       <div class="hero-images">
         <img src="./images/mobile/points.png" alt="Крапки" class="hero-images__points">
         <img
@@ -114,7 +114,7 @@
               Soft ice cream with a delicate taste. Made with milk, cream, sugar
               and natural stabilizer
             </p>
-            <button type="button" class="modal-open-btn" data-modal-open>
+            <button type="button" class="modal-open-btn" arrow-modal-open>
               <svg width="40" height="16" class="product-card__arrow" >
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -134,7 +134,7 @@
               Fragrant invigorating drink created from 100% natural ingredients
               without the use of preservatives and flavor enhancers
             </p>
-            <button type="button" class="modal-open-btn" data-modal-open>
+            <button type="button" class="modal-open-btn" arrow-modal-open>
               <svg width="40" height="16" class="product-card__arrow">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -154,7 +154,7 @@
               Sweet drinks based on milk and ice cream, supplemented with
               syrups, fruits, berries and other sweets of your choice
             </p>
-            <button type="button" class="modal-open-btn" data-modal-open>
+            <button type="button" class="modal-open-btn" arrow-modal-open>
               <svg width="40" height="16" class="product-card__arrow">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -162,9 +162,9 @@
           </div>
         </li>
       </ul>
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal-products>
         <div class="modal-product card-modal" >
-          <button class="mobile-menu-btn mobile-btn close-btn" data-modal-close>
+          <button class="mobile-menu-btn mobile-btn close-btn" products-modal-close>
             <svg class="modal-product__close-icon" width="20" height="20">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -250,32 +250,52 @@
         </div>
       </div>
     </section>
-    <section id="about"></section>
-    <section id="advantages" class="odd container section">
-      <h2 class="advantage-title">
-        <p class="title-first-line title-odd">tradition and love</p>
-        <p class="title-second-line title-odd one-word">how it’s made?</p>
-      </h2>
-      <div class="advantage-circle"></div>
-      <img src="./images/mobile/cow.jpg" alt="cow" class="advantage-img" />
-      <p class="advantage-text">
+    <section id="about" class="odd container section about-section">
+      <label for="about-title" class="title-first-line title-odd">tradition and love</label>
+      <h2 class="about-title title-second-line title-odd one-word" id="about-title">how it’s made?</h2>
+      <div class="about-circle"></div>
+      <img src="./images/mobile/cow.jpg" alt="" class="about-img" />
+      <p class="about-text">
         Ice is a place where you will become not only a little happier, but also
         healthier. Health is the main value for us, and we follow it when
         creating our handmade desserts.
       </p>
-      <p class="advantage-text text-two-pice">
+      <p class="about-text text-two-pice">
         We use traditional recipes and 100% natural ingredients. Our products
         are so natural that they can be given to children from the age of three
         years. Sweets lovers can expect 55 types of ice cream, 15 types of
         coffee and 23 milkshakes.<br />
         This is enough to choose ice cream and coffee for any mood!
       </p>
-      <button class="button yellow-btn advantage-btn btn-icon">
+      <button class="button yellow-btn about-btn btn-icon" about-modal-open>
         Read more
         <svg width="12" height="12">
           <use href="./images/icons.svg#icon-arrow-right"></use>
         </svg>
       </button>
+      <div class="backdrop is-hidden" data-madal-about>
+        <div class="modal-about card-modal">
+          <button class="mobile-menu-btn mobile-btn close-btn" about-modal-close>
+            <svg class="modal-product__close-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h3 class="modal-about__title modal-title">How it's made?</h3>
+          <div class="video">
+            <svg class="modal-read-vector" width="27" height="27">
+              <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+          </div>
+          <p class="information">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+             sed do eiusmod tempor incididunt ut labore et Lorem ipsum 
+             dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+             tempor incididunt ut labore et
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="advantages" class="odd container advantage-section">
+      <h2 class="visually-hidden">Advantages</h2>      
       <div class="icon-thumb">
         <svg width="36" height="36" class="icons">
           <use href="./images/icons.svg#icon-cow"></use>
@@ -304,13 +324,15 @@
         Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
       </p>
     </section>
-    <section id="gallery"></section>
+    <section id="gallery">
+
+    </section>
     <section id="reviews" class="reviews container even">
       <div class="reviews-header">
         <div class="reviews-img"></div>
       </div>
       <div class="gallery active">
-        <div class="reviews-circle"></div>
+        <img src="images/mobile/girl.jpg" class="reviews-circle"></img>
         <div class="review-box">
           <p class="review-text">
             I love visiting your cafe. You prepare the most delicious ice cream
@@ -321,23 +343,22 @@
         <h3 class="review-title">Emily, Los Angeles</h3>
       </div>
       <div class="gallery">
-        <div class="reviews-circle"></div>
+        <img src="./images/mobile/review2.jpg" class="reviews-circle"></img>
         <div class="review-box">
           <p class="review-text">
-            I love visiting your cafe. You prepare the most delicious ice cream
-            in Los Angeles! In addition, you have beautiful serving, cozy
-            atmosphere and polite staff.
+            Every day we come to you with friends after classes in college. 
+            We love your ice cream and casual atmosphere!
           </p>
         </div>
         <h3 class="review-title">Emily, Los Angeles</h3>
       </div>
       <div class="gallery">
-        <div class="reviews-circle"></div>
+        <img src="./images/mobile/review3.jpg" class="reviews-circle"></img>
         <div class="review-box">
           <p class="review-text">
-            I love visiting your cafe. You prepare the most delicious ice cream
-            in Los Angeles! In addition, you have beautiful serving, cozy
-            atmosphere and polite staff.
+            Ice cream is my passion! I love your chocolate hazelnut ice cream! 
+            And I really like the excellent service - always served politely 
+            and quickly!
           </p>
         </div>
         <h3 class="review-title">Emily, Los Angeles</h3>
@@ -348,60 +369,79 @@
         <div id="2" class="dots"></div>
       </div>
     </section>
-    <section id="contacts" class="container section odd">
-      <ul class="contacts-list list">
-        <li class="contacts-list__item">
-          <button class="contacts-button">Caffee</button>
-          <h3 class="contacts-title">Chicago</h3>
-          <p>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
-          <hr />
-          <div class="week">
-            <p class="days">Monday - Friday</p>
-            <p class="times">06:00 AM - 10:00 PM</p>
-            <p class="days">Saturday - Sunday</p>
-            <p class="times">08:00 AM - 16:00 PM</p>
-          </div>
-          <hr />
-          <a href="tel:+610383766284">+61(0) 383 766 284</a>
-          <a href="mailto:noreply@envato.com">noreply@envato.com</a>
-        </li>
-        <li class="contacts-list__item">
-          <button class="contacts-button">Foodtruck</button>
-          <h3 class="contacts-title">Los Angeles</h3>
-          <p>1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
-          <hr />
-          <div class="week">
-            <p class="days">Monday - Friday</p>
-            <p class="times">06:00 AM - 10:00 PM</p>
-            <p class="days">Saturday - Sunday</p>
-            <p class="times">08:00 AM - 16:00 PM</p>
-          </div>
-          <hr />
-          <a href="tel:+610383766284">+61(0) 383 766 284</a>
-          <a href="mailto:noreply@envato.com">noreply@envato.com</a>
-        </li>
-        <li class="contacts-list__item">
-          <button class="contacts-button">Caffee</button>
-          <h3 class="contacts-title">New York</h3>
-          <p>726 Sterling Pl, Brooklyn, NY 11222, USA</p>
-          <hr />
-          <div class="week">
-            <p class="days">Monday - Friday</p>
-            <p class="times">06:00 AM - 10:00 PM</p>
-            <p class="days">Saturday - Sunday</p>
-            <p class="times">08:00 AM - 16:00 PM</p>
-          </div>
-          <hr />
-          <a href="tel:+610383766284">+61(0) 383 766 284</a>
-          <a href="mailto:noreply@envato.com">noreply@envato.com</a>
-        </li>
-      </ul>
+    <section id="contacts" class="contacts container section odd">
+      <h2 class="visually-hidden">Our contacts</h2>
+      <div class="contacts-thumb">
+        <ul class="contacts-list list">
+          <li class="contacts-list__item">
+            <p class="contacts-representative">Caffee</p>
+            <h3 class="contacts-title">Chicago</h3>
+            <p class="contacts-address">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
+            <hr />
+            <div class="week">
+              <p class="days">Monday - Friday</p>
+              <p class="times">06:00 AM - 10:00 PM</p>
+              <p class="days">Saturday - Sunday</p>
+              <p class="times">08:00 AM - 16:00 PM</p>
+            </div>
+            <hr />
+            <a class="communication" href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a class="communication" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+          <li class="contacts-list__item">
+            <p class="contacts-representative">Foodtruck</p>
+            <h3 class="contacts-title">Los Angeles</h3>
+            <p class="contacts-address">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
+            <hr />
+            <div class="week">
+              <p class="days">Monday - Friday</p>
+              <p class="times">06:00 AM - 10:00 PM</p>
+              <p class="days">Saturday - Sunday</p>
+              <p class="times">08:00 AM - 16:00 PM</p>
+            </div>
+            <hr />
+            <a class="communication" href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a class="communication" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+          <li class="contacts-list__item">
+            <p class="contacts-representative">Caffee</p>
+            <h3 class="contacts-title">New York</h3>
+            <p class="contacts-address">726 Sterling Pl, Brooklyn, NY 11222, USA</p>
+            <hr />
+            <div class="week">
+              <p class="days">Monday - Friday</p>
+              <p class="times">06:00 AM - 10:00 PM</p>
+              <p class="days">Saturday - Sunday</p>
+              <p class="times">08:00 AM - 16:00 PM</p>
+            </div>
+            <hr />
+            <a class="communication" href="tel:+610383766284">+61(0) 383 766 284</a>
+            <a class="communication" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+        </ul>
+        <button type="button" class="button yellow-btn contacts-btn">
+          Our Locations
+          <svg width="12" height="12">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>      
+        <button type="button" class="button green-btn contacts-btn">
+          Franchise
+          <svg width="12" height="12">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>   
+      </div>   
     </section>
-    <footer>
-      <address></address>
+    <footer class="odd">
+      <p>homemade ice cream made</p>
+      <p>with passion</p>
       <div class="button__group"></div>
+      <a href="tel:+610383766284">Feel free to contact +61 (0) 383 766 284</a>
     </footer>
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal-about.js"></script>
+    <script src="./js/modal-product.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/sliger.js"></script>
   </body>

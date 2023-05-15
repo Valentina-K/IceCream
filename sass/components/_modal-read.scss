@@ -1,0 +1,18 @@
+.modal-about{
+    transform: scale(1);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .backdrop.is-hidden & {
+        transform: scale(0.5);
+    }
+}
+
+.modal-about__title{
+    margin-bottom: 20px;
+}
+.video{
+    padding: 86px 98px;
+    margin-bottom: 20px;
+    background: var(--text-color);
+    border-radius: 10px;
+}
