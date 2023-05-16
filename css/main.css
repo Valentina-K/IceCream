@@ -773,23 +773,6 @@ td:last-child {
   padding-bottom: 412px;
 }
 
-.reviews-header {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-.reviews-img {
-  position: relative;
-  top: -36px;
-  width: 280px;
-  height: 130px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 8px;
-  background-image: url("../../images/mobile/brooke-lark.jpg");
-}
-
 .reviews-circle {
   width: 85px;
   height: 85px;
@@ -1004,4 +987,44 @@ td:last-child {
   line-height: 1.2857142857;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+.gallery-thumb {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.gallery-img {
+  position: relative;
+  display: none;
+  top: -36px;
+  width: 280px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-img.active {
+  display: block;
+  animation-name: animationImg;
+  animation-duration: 2.5s;
+  animation-delay: 0.6s;
+  animation-iteration-count: infinite;
+}
+
+.gallery-img > img {
+  border-radius: 8px;
+}
+
+@keyframes animationImg {
+  from {
+    margin-left: 100%;
+  }
+  50% {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -100%;
+  }
 }/*# sourceMappingURL=main.css.map */
