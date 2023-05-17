@@ -158,6 +158,13 @@ a {
   letter-spacing: 0.04em;
 }
 
+.product-card-modal {
+  width: 132px;
+  height: 136px;
+  padding-top: 96px;
+  margin-bottom: 82px;
+}
+
 .milkshake {
   background-color: var(--milk-card-bg-color);
   margin-bottom: 0;
@@ -301,6 +308,16 @@ a {
   position: absolute;
   top: 12px;
   right: 12px;
+}
+
+.modal-title {
+  font-family: var(--second-font-family);
+  font-style: normal;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
 }
 
 .information {
@@ -489,16 +506,9 @@ a {
 }
 
 .modal-product__title {
-  font-family: var(--second-font-family);
-  font-style: normal;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: var(--text-color);
 }
 
 .modal-product__image {
@@ -606,6 +616,12 @@ td:first-child {
 
 td:last-child {
   text-align: right;
+}
+
+.modal-buy__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .modal-about {

@@ -20,17 +20,8 @@
     border: none;
   } 
 
-.modal-product__title{
-    font-family: var(--second-font-family);
-    font-style: normal;
+.modal-product__title{    
     @include font(20px,400,28px);
-    margin-bottom: 20px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: var(--text-color);
 }
 
 .modal-product__image{

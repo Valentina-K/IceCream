@@ -31,6 +31,18 @@
     right: 12px;
 }
 
+.modal-title{
+  font-family: var(--second-font-family);
+  font-style: normal;  
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: var(--text-color);
+}
+
   .information{
     font-family: var(--main-font-family);
     font-style: normal;
