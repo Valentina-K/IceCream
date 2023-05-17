@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <section id="hero" class="container odd">
+    <section id="hero" class="container odd hero">
       <header class="header">
         <div>
           <nav class="navigation">
@@ -68,7 +68,7 @@
             </li>
             <li class="mobile-menu-list__item">
               <a
-                href="./index.html#products"
+                href="#products"
                 class="mobile-menu-list__link link"
                 >Our products</a
               >
@@ -326,9 +326,9 @@
     </section>
     <section id="gallery" class="container">
       <ul class="gallery-thumb list">
-        <li class="gallery-img"><img src="./images/mobile/brooke-lark.jpg"></li>
-        <li class="gallery-img"><img src="./images/mobile/imgGallery2.jpg"></li>
-        <li class="gallery-img"><img src="./images/mobile/imgGallery3.jpg"></li>
+        <li class="gallery-img"><img src="./images/mobile/brooke-lark.jpg" alt="Brooke lark 1"></li>
+        <li class="gallery-img"><img src="./images/mobile/imgGallery2.jpg" alt="Brooke lark 2"></li>
+        <li class="gallery-img"><img src="./images/mobile/imgGallery3.jpg" alt="Brooke lark 3"></li>
       </ul>
     </section>
     <section id="reviews" class="reviews container even">      
@@ -370,7 +370,7 @@
         <div id="2" class="dots"></div>
       </div>
     </section>
-    <section id="contacts" class="contacts container section odd">
+    <section id="contacts" class="container odd">
       <h2 class="visually-hidden">Our contacts</h2>
       <div class="contacts-thumb">
         <ul class="contacts-list list">
@@ -434,11 +434,36 @@
         </button>   
       </div>   
     </section>
-    <footer class="odd">
-      <p>homemade ice cream made</p>
-      <p>with passion</p>
-      <div class="button__group"></div>
-      <a href="tel:+610383766284">Feel free to contact +61 (0) 383 766 284</a>
+    <footer class="odd container footer">
+      <p class="title-first-line title-odd footer-title-first-line">homemade ice cream made</p>
+      <p class="footer-title">with passion</p>
+      <ul class="footer-social__list list">
+        <li class="footer-social-list__item">
+          <a class="social-list__link link" href="#"
+            ><svg class="social-list__icon foot" width="34" height="34">
+              <use href="./images/social-icons.svg#icon-github"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-list__item">
+          <a class="social-list__link link" href="#"
+            ><svg class="social-list__icon foot" width="34" height="34">
+              <use href="./images/social-icons.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>        
+        <li class="footer-social-list__item">
+          <a class="social-list__link link" href="#"
+            ><svg class="social-list__icon foot" width="34" height="34">
+              <use href="./images/social-icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>        
+      </ul>
+      <a href="tel:+610383766284" class="link footer-link"><span class="footer-address-text">Feel free to contact </span><span class="footer-address-phone">+61 (0) 383 766 284</span></a>
+      <hr class="footer-line"/>
+      <p class="footer-text">© 2022 - IceCream.</p>
+      <p class="footer-text">All Rights Reserved.</p>
     </footer>
     <script src="./js/gallery.js"></script>
     <script src="./js/modal-about.js"></script>

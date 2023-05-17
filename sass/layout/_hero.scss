@@ -1,3 +1,7 @@
+.hero{
+  position: relative;
+}
+
 .hero__title {
   width: 248px;
   margin-bottom: 32px;
@@ -36,18 +40,18 @@
   color: var(--accent-color);
 }
 
-.hero-images {  
-  position: relative;
+.hero-images {    
   margin-top: 20px;
   height: 218px;  
 }
 .hero-images__ice{
-  position: absolute;
-  left: 64px;
+  margin-left: 64px;
   animation-duration: 250ms;
   animation-name: show_img;
 }
 .hero-images__points{
+  width: 100%;
+  left: 0;
   position: absolute;
   bottom: 0;
   animation-duration: 250ms;

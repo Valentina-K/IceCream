@@ -2,17 +2,17 @@
     const imgArray = document.querySelectorAll('.gallery-img');
     
 
-    imgArray.forEach(img=>img.addEventListener('animationiteration', animationImg));
-    imgArray[0].classList.add('active');
+    imgArray.forEach(img=>img.addEventListener('animationiteration', animationImg));    
+   
+
+    imgArray[0].classList.add('active'); 
+
+       
     let index=0;
-    function animationImg(e){
-        console.log(e)
+    function animationImg(){
         imgArray[index].classList.toggle('active')
-        if(index!=2){
-            index = index+1;
-        } else {
-            index=0;
-        }
+        index = index == 2 ? 0 : index + 1;
+        
         imgArray[index].classList.toggle('active');        
     }
 })();
