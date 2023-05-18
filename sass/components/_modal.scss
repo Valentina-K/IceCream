@@ -45,6 +45,7 @@
     font-family: var(--main-font-family);
     font-style: normal;
     @include font(14px,400,20px);
+    margin-bottom: 24px;
 
     color: var(--text-color);
   }
@@ -58,17 +59,12 @@
     border-radius: 10px;
 }
 
-.contact-form__text.form-buy{
-  padding: 8px 12px;
-  margin-bottom: 12px;
-}
+
 .contact-form__text.area{
     margin-bottom: 24px;
 }
 
-.contact-form__text.area.form-buy{
-  margin-bottom: 26px;
-}
+
 .contact-form{
     display: flex;
     flex-direction: column;
@@ -81,10 +77,7 @@
     color: var(--text-color);
 }
 
-.contact-form.form-buy{
-  @include font(12px,400,17px);
 
-}
 .form-btn{
     border-radius: 10px;
     padding: 12px 34px;
@@ -97,7 +90,3 @@
     color: var(--text-color);
 }
 
-.form-btn.form-buy{
-  @include font(12px, 600, 15px);
-  width: 114px;
-}

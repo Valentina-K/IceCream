@@ -5,3 +5,22 @@
     @include font(16px,400,24px);   
     margin-bottom: 84px;
 }
+
+.form-btn.form-buy{
+    @include font(12px, 600, 15px);
+    width: 114px;
+  }
+
+  .contact-form.form-buy{
+    @include font(12px,400,17px);
+  
+  }
+
+  .contact-form__text.area.form-buy{
+    margin-bottom: 26px;
+  }
+
+  .contact-form__text.form-buy{
+    padding: 8px 12px;
+    margin-bottom: 12px;
+  }

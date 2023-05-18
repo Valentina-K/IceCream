@@ -1,0 +1,10 @@
+.map{
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+
+.form-location{
+    @include font(12px, 600, 15px);
+    width: 134px;
+}
