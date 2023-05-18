@@ -18,21 +18,48 @@
 }
 
 .product-card-modal{
+  position: relative;
   width: 132px;
   height: 136px;
   padding-top: 96px;
   margin-bottom: 82px;
+  border-radius: 15px;
+  font-family: var(--main-font-family);
+  color: var(--text-color);
+  letter-spacing: 0.04em;
 }
 
+.product-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-modal{
+  margin-bottom: 30px;
+}
 .milkshake {
   background-color: var(--milk-card-bg-color);
   margin-bottom: 0;
 }
+
+.milkshake-modal{
+  border: 2px solid #D6936D;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
 .ice-cream {
   background-color: var(--ice-cream-card-bg-color);
 }
+.ice-cream-modal{
+  border: 2px solid #96AF8C;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
 .ice-coffee {
   background-color: var(--coffee-card-bg-color);
+}
+.coffee-modal{
+  border: 2px solid #EFD478;
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
 }
 .product-card__img {
   position: absolute;
@@ -41,11 +68,24 @@
   transform: translateX(-50%);
   border-radius: 100px;
 }
+.img-modal{
+  top: -67px;
+}
 .circl {
   position: absolute;
   width: 200px;
   height: 200px;
   top: -98px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px;
+}
+
+.circl-modal{
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 100px;
@@ -82,6 +122,10 @@
   margin-bottom: 40px;
   @include font(20px, 700, 24px);
   text-transform: uppercase;
+}
+
+.product-card__title.title-modal{
+@include font(16px, 700, 20px);
 }
 .product-card__text {
   margin-left: auto;
