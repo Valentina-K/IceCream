@@ -1,5 +1,10 @@
 .hero{
   position: relative;
+  padding-bottom: 236px;
+
+  @media screen and (min-width:480px) {
+    padding-bottom: 150px;
+  }
 }
 
 .hero__title {
@@ -45,9 +50,18 @@
   height: 218px;  
 }
 .hero-images__ice{
-  margin-left: 64px;
+  position: absolute;
+  left: 26%;
+  bottom: 0;
   animation-duration: 250ms;
   animation-name: show_img;
+
+  @media screen and (min-width: 480px)  {
+    width: 218px;
+    bottom: 0;
+    left: auto;
+    right: 20px;
+  }
 }
 .hero-images__points{
   width: 100%;
@@ -56,6 +70,11 @@
   bottom: 0;
   animation-duration: 250ms;
   animation-name: show_img;
+  
+  @media screen and (min-width: 480px)  {
+    width: 330px;
+    left: 150px;
+  }
 }
 @keyframes show_img {
   from{

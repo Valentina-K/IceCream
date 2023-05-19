@@ -2,6 +2,10 @@
 .contacts-thumb{
   position: relative;
   top: -352px; 
+
+  @media screen and (min-width:480px) {
+    padding: 0 80px;
+  }
 }
 .contacts-list {
   margin-bottom: 20px;

@@ -11,6 +11,11 @@
     height: 130px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width:480px) {
+        width: 440px;
+        height: 204px;
+    }
   }
 
   .gallery-img.active {
