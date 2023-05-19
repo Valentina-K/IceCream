@@ -61,7 +61,7 @@
             </li>
             <li class="mobile-menu-list__item">
               <a
-                href="./index.html#advantage"
+                href="#about"
                 class="mobile-menu-list__link link"
                 >How it's make?</a
               >
@@ -74,7 +74,7 @@
               >
             </li>
             <li class="mobile-menu-list__item">
-              <a href="#contact" class="mobile-menu-list__link link">Contact</a>
+              <a href="#contacts" class="mobile-menu-list__link link">Contact</a>
             </li>
           </ul>
           <button type="button" class="button yellow-btn mobile-menu-button" buy-modal-open>Buy now</button>
@@ -86,11 +86,16 @@
       <a href="#products" class="link hero__btn-link">Products</a>
       <a href="#about" class="link hero__link">How it’s made?</a>
       <div class="hero-images">
-        <img src="./images/mobile/points.png" alt="Крапки" class="hero-images__points">
+        <img 
+          srcset="./images/mobile/points.png 1x, ./images/mobile/points@2x.png 2x, ./images/mobile/points@3x.png 3x"
+          src="./images/mobile/points.png" 
+          alt="Крапки" 
+          class="hero-images__points">
         <img
-        src="./images/mobile/ice-cream.png"
-        alt="Морозиво"
-        class="hero-images__ice"
+          srcset="./images/mobile/ice-cream.png 1x, ./images/mobile/ice-cream@2x.png 2x, ./images/mobile/ice-cream@3x.png 3x"
+          src="./images/mobile/ice-cream.png"
+          alt="Морозиво"
+          class="hero-images__ice"
       />      
       </div>
       
@@ -105,6 +110,7 @@
           <div class="product-card ice-cream">
             <div class="circl circl-ice-cream"></div>
             <img
+              srcset="./images/mobile/ice-cream-ellips.jpg 1x, ./images/mobile/ice-cream-ellips@2x.jpg 2x, ./images/mobile/ice-cream-ellips@3x.jpg 3x"
               src="./images/mobile/ice-cream-ellips.jpg"
               class="product-card__img"
               alt=""
@@ -125,6 +131,7 @@
           <div class="product-card ice-coffee">
             <div class="circl circl-coffee"></div>
             <img
+              srcset="./images/mobile/ice-coffee.jpg 1x, ./images/mobile/ice-coffee@2x.jpg 2x, ./images/mobile/ice-coffee@3x.jpg 3x"
               src="./images/mobile/ice-coffee.jpg"
               class="product-card__img"
               alt=""
@@ -145,6 +152,7 @@
           <div class="product-card milkshake">
             <div class="circl circl-milkshake"></div>
             <img
+            srcset="./images/mobile/milkshake.jpg 1x, ./images/mobile/milkshake@2x.jpg 2x, ./images/mobile/milkshake@3x.jpg 3x"
               src="./images/mobile/milkshake.jpg"
               class="product-card__img"
               alt=""
@@ -173,6 +181,7 @@
           <div class="modal-product__image">
             <div class="modal-product__circl"></div>
             <img
+              srcset="./images/mobile/ingredients.jpg 1x, ./images/mobile/ingredients@2x.jpg 2x, ./images/mobile/ingredients@3x.jpg 3x"
               src="./images/mobile/ingredients.jpg"
               class="modal-product__circl-img"
               alt=""
@@ -254,7 +263,10 @@
       <label for="about-title" class="title-first-line title-odd">tradition and love</label>
       <h2 class="about-title title-second-line title-odd one-word" id="about-title">how it’s made?</h2>
       <div class="about-circle"></div>
-      <img src="./images/mobile/cow.jpg" alt="" class="about-img" />
+      <img
+        srcset="./images/mobile/cow.jpg 1x, ./images/mobile/cow@2x.jpg 2x, ./images/mobile/cow@3x.jpg 3x"
+        src="./images/mobile/cow.jpg" 
+        alt="" class="about-img" />
       <p class="about-text">
         Ice is a place where you will become not only a little happier, but also
         healthier. Health is the main value for us, and we follow it when
@@ -326,14 +338,33 @@
     </section>
     <section id="gallery" class="container">
       <ul class="gallery-thumb list">
-        <li class="gallery-img"><img src="./images/mobile/brooke-lark.jpg" alt="Brooke lark 1"></li>
-        <li class="gallery-img"><img src="./images/mobile/imgGallery2.jpg" alt="Brooke lark 2"></li>
-        <li class="gallery-img"><img src="./images/mobile/imgGallery3.jpg" alt="Brooke lark 3"></li>
+        <li class="gallery-img">
+          <img 
+          srcset="./images/mobile/brooke-lark.jpg 1x, ./images/mobile/brooke-lark@2x.jpg 2x, ./images/mobile/brooke-lark@3x.jpg 3x" 
+          src="./images/mobile/brooke-lark.jpg" 
+          alt="Brooke lark 1">
+        </li>
+        <li class="gallery-img">
+          <img 
+          srcset="./images/mobile/imgGallery2.jpg 1x, ./images/mobile/imgGallery2@2x.jpg 2x, ./images/mobile/imgGallery2@3x.jpg 3x" 
+          src="./images/mobile/imgGallery2.jpg" 
+          alt="Brooke lark 2">
+        </li>
+        <li class="gallery-img">
+          <img 
+          srcset="./images/mobile/imgGallery3.jpg 1x, ./images/mobile/imgGallery3@2x.jpg 2x, ./images/mobile/imgGallery3@3x.jpg 3x" 
+          src="./images/mobile/imgGallery3.jpg" 
+          alt="Brooke lark 3">
+        </li>
       </ul>
     </section>
     <section id="reviews" class="reviews container even">      
       <div class="gallery active">
-        <img src="images/mobile/girl.jpg" class="reviews-circle"></img>
+        <img 
+        srcset="./images/mobile/girl.jpg 1x, ./images/mobile/girl@2x.jpg 2x, ./images/mobile/girl@3x.jpg 3x"
+        src="./images/mobile/girl.jpg" 
+        class="reviews-circle">
+      </img>
         <div class="review-box">
           <p class="review-text">
             I love visiting your cafe. You prepare the most delicious ice cream
@@ -344,7 +375,11 @@
         <h3 class="review-title">Emily, Los Angeles</h3>
       </div>
       <div class="gallery">
-        <img src="./images/mobile/review2.jpg" class="reviews-circle"></img>
+        <img 
+        srcset="./images/mobile/review2.jpg 1x, ./images/mobile/review2@2x.jpg 2x, ./images/mobile/review2@3x.jpg 3x"
+        src="./images/mobile/review2.jpg" 
+        class="reviews-circle">
+      </img>
         <div class="review-box">
           <p class="review-text">
             Every day we come to you with friends after classes in college. 
@@ -354,7 +389,11 @@
         <h3 class="review-title">Emily, Los Angeles</h3>
       </div>
       <div class="gallery">
-        <img src="./images/mobile/review3.jpg" class="reviews-circle"></img>
+        <img
+        srcset="./images/mobile/review3.jpg 1x, ./images/mobile/review3@2x.jpg 2x, ./images/mobile/review3@3x.jpg 3x" 
+        src="./images/mobile/review3.jpg" 
+        class="reviews-circle">
+      </img>
         <div class="review-box">
           <p class="review-text">
             Ice cream is my passion! I love your chocolate hazelnut ice cream! 
@@ -420,13 +459,13 @@
             <a class="communication" href="mailto:noreply@envato.com">noreply@envato.com</a>
           </li>
         </ul>
-        <button type="button" class="button yellow-btn contacts-btn">
+        <button type="button" class="button yellow-btn contacts-btn" location-modal-open>
           Our Locations
           <svg width="12" height="12">
             <use href="./images/icons.svg#icon-arrow-right"></use>
           </svg>
         </button>      
-        <button type="button" class="button green-btn contacts-btn">
+        <button type="button" class="button green-btn contacts-btn" franchise-modal-open>
           Franchise
           <svg width="12" height="12">
             <use href="./images/icons.svg#icon-arrow-right"></use>
@@ -487,12 +526,12 @@
     </div>
     <div class="backdrop is-hidden" data-madal-franchise>
       <div class="modal-buy card-modal" >
-        <button class="mobile-menu-btn mobile-btn close-btn" buy-modal-close>
+        <button class="mobile-menu-btn mobile-btn close-btn" franchise-modal-close>
           <svg class="modal-product__close-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h3 class="modal-buy__title modal-title">Thank you for your interest in owning an Ice Cream shop</h3>        
+        <h3 class="modal-buy__title modal-title franchise-title">Thank you for your interest in owning an Ice Cream shop</h3>        
         <p class="information">Due to the overwhelming volume of franchise requests
            we are not accepting new franchisee applications at this time. Once the 
            application process resumes, we will contact you for further information. 
@@ -518,7 +557,7 @@
         <div class="map">
           <img src="./images/mobile/map.jpg" alt="location">
         </div>
-        <button type="button" class="form-btn yellow-btn form-location">Open map</button>
+        <button type="button" class="form-btn yellow-btn btn-location">Open map</button>
       </div>
     </div>
     <footer class="odd container footer">
@@ -558,5 +597,7 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal-buy.js"></script>
     <script src="./js/sliger.js"></script>
+    <script src="./js/modal-franchise.js"></script>
+    <script src="./js/modal-location.js"></script>
   </body>
 </html>

@@ -1,0 +1,7 @@
+.btn-location{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include font(12px, 600, 15px);
+    width: 134px;
+}
