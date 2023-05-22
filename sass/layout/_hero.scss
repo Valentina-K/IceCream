@@ -1,9 +1,21 @@
 .hero{
   position: relative;
   padding-bottom: 236px;
+  padding-top: 12px;
 
   @media screen and (min-width:480px) {
     padding-bottom: 150px;
+  }
+
+  @media screen and (min-width:768px) {
+    padding-bottom: 24px;
+    padding-top: 20px;
+  }
+}
+
+.hero-main-thumb{
+  @media screen and (min-width:768px) {
+    @include flex(flex,space-between,baseline);
   }
 }
 
@@ -45,6 +57,78 @@
   color: var(--accent-color);
 }
 
+.hero-text-thumb{
+  display:none;
+  @media screen and (min-width:768px) {
+    display: block;
+    width: 167px;
+    margin-top: 46px;
+    margin-left: 184px;
+  }
+}
+
+.hero-text{
+  @media screen and (min-width:768px) {
+    margin-bottom: 29px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    @include font(12px,400,17px);
+
+    color: #FFFFFF;
+  }
+}
+
+.hero-main-right{
+  display: none;
+
+  @media screen and (min-width:768px) {
+    display: block;
+  }
+}
+
+.hero-text-number{
+  font-family: var(--main-font-family);
+  font-style: normal;
+  @include font(28px,900,34px);
+  letter-spacing: 0.04em;
+  text-align: right;
+
+  color: var(--text-color);
+}
+
+.hero-text-description{
+  font-family: var(--main-font-family);
+  font-style: normal;
+  @include font(8px,400,10px);
+  text-align: right;
+
+  color: var(--contrast-color);
+}
+
+.hero-text-description:nth-child(n+1){
+  margin-bottom: 20px;
+}
+
+.hero-arrow{
+  fill: var(--contrast-color);
+}
+
+.hero-modal-btn{
+  padding: 0;
+}
+
+.points{
+  @include flex(flex,space-between,end);
+  width: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  animation-duration: 250ms;
+  animation-name: show_img;
+
+  
+}
+
 .hero-images {    
   margin-top: 20px;
   height: 218px;  
@@ -62,18 +146,36 @@
     left: auto;
     right: 20px;
   }
+
+  @media screen and (min-width:768px) {
+    left:408px;
+    width: 268px;
+  }
+}
+
+.hero-images__lot-of-ice-cream{
+  display: none;
+  @media screen and (min-width:768px) {
+    display: block;
+    position: absolute;
+    left: 32px;
+    bottom: 12px;
+    animation-duration: 250ms;
+    animation-name: show_img;
+    border-radius: 100%;
+  }
 }
 .hero-images__points{
-  width: 100%;
+  /* width: 100%;
   left: 0;
   position: absolute;
   bottom: 0;
   animation-duration: 250ms;
-  animation-name: show_img;
+  animation-name: show_img; */
   
   @media screen and (min-width: 480px)  {
-    width: 330px;
-    left: 150px;
+    /* width: 330px;
+    left: 150px; */
   }
 }
 @keyframes show_img {

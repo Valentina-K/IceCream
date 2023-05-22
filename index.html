@@ -25,7 +25,8 @@
             <a href="index.html" class="logo">
               <img src="./images/mobile/лого.png" alt="Logo" />
             </a>
-            <button
+            <div class="btn-thumb">
+              <button
               type="button"
               class="mobile-menu-btn mobile-btn"
               aria-expanded="false"
@@ -40,6 +41,8 @@
                 <use href="./images/icons.svg#icon-mobile-menu"></use>
               </svg>
             </button>
+            <button type="button" class="button yellow-btn mobile-menu-button tablet-btn" buy-modal-open>Buy now</button>
+            </div>
           </nav>
         </div>
         <div class="mobile-menu" data-menu>
@@ -77,20 +80,50 @@
               <a href="#contacts" class="mobile-menu-list__link link">Contact</a>
             </li>
           </ul>
-          <button type="button" class="button yellow-btn mobile-menu-button" buy-modal-open>Buy now</button>
+          <button type="button" class="button yellow-btn mobile-menu-button mobile-button" buy-modal-open>Buy now</button>
         </div>
       </header>
-      <h1 class="hero__title">
-        ice cream made with <span class="big">passion</span>
-      </h1>
-      <a href="#products" class="link hero__btn-link">Products</a>
-      <a href="#about" class="link hero__link">How it’s made?</a>
+      <div class="hero-main-thumb">
+        <div class="hero-main-left">
+          <h1 class="hero__title">
+            ice cream made with <span class="big">passion</span>
+          </h1>
+          <a href="#products" class="link hero__btn-link">Products</a>
+          <a href="#about" class="link hero__link">How it’s made?</a>
+        </div>
+        <div class="hero-main-right">
+          <p class="hero-text-number">16</p>
+          <p class="hero-text-description">cafes</p>
+          <p class="hero-text-number">23</p>
+          <p class="hero-text-description">food trucks</p>
+        </div>
+      </div>
+      <div class="hero-text-thumb">
+        <p class="hero-text">Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!</p>
+        <button type="button" class="modal-open-btn hero-modal-btn" arrow-modal-open>
+          <svg width="40" height="16" class="hero-arrow" >
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
       <!-- <div class="hero-images"> -->
-        <img 
-          srcset="./images/mobile/points.png 1x, ./images/mobile/points@2x.png 2x, ./images/mobile/points@3x.png 3x"
-          src="./images/mobile/points.png" 
+        <div class="points">
+          <img 
+          srcset="./images/tablet/points-left.png 1x, ./images/tablet/points-left@2x.png 2x, ./images/tablet/points-left@3x.png 3x"
+          src="./images/tablet/points-left.png" 
           alt="Крапки" 
           class="hero-images__points">
+          <img 
+          srcset="./images/tablet/points-right.png 1x, ./images/tablet/points-right@2x.png 2x, ./images/tablet/points-right@3x.png 3x"
+          src="./images/tablet/points-right.png" 
+          alt="Крапки" 
+          class="hero-images__points">
+        </div>
+        <img 
+          srcset="./images/tablet/lot-of-ice-Cream.jpg 1x, ./images/tablet/lot-of-ice-Cream@2x.jpg 2x, ./images/tablet/lot-of-ice-Cream@3x.jpg 3x,"
+          src="./images/tablet/lot-of-ice-Cream.jpg" 
+          alt="a lot of ice-cream"
+          class="hero-images__lot-of-ice-cream">        
         <img
           srcset="./images/mobile/ice-cream.png 1x, ./images/mobile/ice-cream@2x.png 2x, ./images/mobile/ice-cream@3x.png 3x"
           src="./images/mobile/ice-cream.png"

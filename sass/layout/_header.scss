@@ -1,6 +1,9 @@
 .header {
-  padding-top: 12px;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;    
+  }
 }
 .navigation {
   @include flex(flex, space-between, center);
@@ -9,4 +12,16 @@
   @media screen and (min-width: 768px) {
     display: flex;
   } */
+}
+
+.btn-thumb{
+  display: flex;
+}
+
+.tablet-btn{
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
