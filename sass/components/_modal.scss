@@ -22,7 +22,12 @@
     width: 280px;
     padding: 28px;
     border: 2px solid #F8D24E;
-    border-radius: 10px;    
+    border-radius: 10px;  
+    
+    @media screen and (min-width:768px) {
+      width: 568px;
+      padding: 32px 54px;
+    }
   }
 
   .close-btn{
@@ -38,7 +43,7 @@
 
   text-align: center;
 
-  color: var(--text-color);
+  color: var(--text-color);  
 }
 
   .information{
@@ -62,6 +67,10 @@
 
 .contact-form__text.area{
     margin-bottom: 24px;
+
+    @media screen and (min-width:768px) {
+      margin-bottom: 32px;
+    }
 }
 
 
@@ -75,6 +84,12 @@
     @include font(14px,400,20px);
     
     color: var(--text-color);
+
+    @media screen and (min-width:768px) {
+      width: 368px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 

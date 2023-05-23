@@ -4,6 +4,11 @@
 .modal-buy__title{
     @include font(16px,400,24px);   
     margin-bottom: 84px;
+
+    @media screen and (min-width:768px) {
+      @include font(20px,400,28px); 
+      margin-bottom: 106px;
+    }
 }
 
 .form-btn.form-buy{
@@ -17,10 +22,15 @@
   }
 
   .contact-form__text.area.form-buy{
-    margin-bottom: 26px;
+    margin-bottom: 26px;    
   }
 
   .contact-form__text.form-buy{
     padding: 8px 12px;
     margin-bottom: 12px;
+
+    @media screen and (min-width:768px) {
+      padding: 11px 16px;
+      margin-bottom: 16px;
+    }
   }

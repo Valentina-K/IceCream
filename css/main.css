@@ -139,6 +139,16 @@ a {
   vertical-align: middle;
 }
  */
+.product-list__item:not(:last-child) {
+  margin-bottom: 82px;
+}
+@media screen and (min-width: 768px) {
+  .product-list__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+}
+
 .address-card {
   min-width: 280px;
   height: 412px;
@@ -164,13 +174,18 @@ a {
     height: 428px;
   }
 }
+@media screen and (min-width: 768px) {
+  .product-card {
+    min-width: 224px;
+    margin-bottom: 0;
+  }
+}
 
 .product-card-modal {
   position: relative;
   width: 132px;
   height: 136px;
   padding-top: 96px;
-  margin-bottom: 82px;
   border-radius: 15px;
   font-family: var(--main-font-family);
   color: var(--text-color);
@@ -182,9 +197,19 @@ a {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .product-list {
+    flex-direction: row;
+  }
+}
 
 .list-modal {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .list-modal {
+    margin-bottom: 40px;
+  }
 }
 
 .milkshake {
@@ -358,6 +383,12 @@ a {
   border: 2px solid #F8D24E;
   border-radius: 10px;
 }
+@media screen and (min-width: 768px) {
+  .card-modal {
+    width: 568px;
+    padding: 32px 54px;
+  }
+}
 
 .close-btn {
   position: absolute;
@@ -395,6 +426,11 @@ a {
 .contact-form__text.area {
   margin-bottom: 24px;
 }
+@media screen and (min-width: 768px) {
+  .contact-form__text.area {
+    margin-bottom: 32px;
+  }
+}
 
 .contact-form {
   display: flex;
@@ -406,6 +442,13 @@ a {
   font-weight: 400;
   line-height: 1.4285714286;
   color: var(--text-color);
+}
+@media screen and (min-width: 768px) {
+  .contact-form {
+    width: 368px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .form-btn {
@@ -694,6 +737,14 @@ td:last-child {
   line-height: 1.5;
   margin-bottom: 84px;
 }
+@media screen and (min-width: 768px) {
+  .modal-buy__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 106px;
+  }
+}
 
 .form-btn.form-buy {
   font-size: 12px;
@@ -715,6 +766,12 @@ td:last-child {
 .contact-form__text.form-buy {
   padding: 8px 12px;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .contact-form__text.form-buy {
+    padding: 11px 16px;
+    margin-bottom: 16px;
+  }
 }
 
 .modal-about {
@@ -935,6 +992,13 @@ td:last-child {
   bottom: 0;
   animation-duration: 250ms;
   animation-name: show_img;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .points {
+    width: 330px;
+    right: 0;
+    left: auto;
+  }
 }
 
 .hero-images {

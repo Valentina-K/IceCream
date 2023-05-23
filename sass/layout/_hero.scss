@@ -126,7 +126,11 @@
   animation-duration: 250ms;
   animation-name: show_img;
 
-  
+  @media screen and (min-width:480px) and (max-width:767px) {
+    width: 330px;
+    right: 0;
+    left: auto;
+  }
 }
 
 .hero-images {    
