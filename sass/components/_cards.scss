@@ -1,9 +1,13 @@
 .product-list__item:not(:last-child){
-  margin-bottom: 82px;
+  margin-bottom: 168px;
   @media screen and (min-width:768px) {
     margin-bottom: 0;
-    margin-right: 32px;
+    margin-right: 16px;
   }
+}
+
+.product-list__item:not(:last-child).item-modal{
+  margin-bottom: 82px;
 }
 
 .address-card {
@@ -19,7 +23,6 @@
   height: 420px;
   padding-top: 124px;
   border-radius: 24px;
-  margin-bottom: 168px;
   font-family: var(--main-font-family);
   color: var(--text-color);
   letter-spacing: 0.04em;
@@ -148,6 +151,11 @@
   margin-bottom: 40px;
   @include font(20px, 700, 24px);
   text-transform: uppercase;
+
+  @media screen and (min-width:768px) {
+    @include font(22px, 700, 27px);
+    letter-spacing: 0.04em;
+  }
 }
 
 .product-card__title.title-modal{
@@ -165,4 +173,8 @@
   margin-left: 50%;
   transform: translateX(-50%);
   bottom: 16px;
+
+  @media screen and (min-width:768px) {
+    bottom: 12px;
+  }
 }

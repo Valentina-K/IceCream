@@ -65,12 +65,12 @@ a {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    /* width: 480px */
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    /* width: 768px; */
     padding: 0 32px;
   }
 }
@@ -103,12 +103,10 @@ a {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  /*  @media screen and (min-width: 768px) {
+     padding-top: 94px;
+     padding-bottom: 94px;
+   } */
 }
 
 .button {
@@ -140,13 +138,17 @@ a {
 }
  */
 .product-list__item:not(:last-child) {
-  margin-bottom: 82px;
+  margin-bottom: 168px;
 }
 @media screen and (min-width: 768px) {
   .product-list__item:not(:last-child) {
     margin-bottom: 0;
-    margin-right: 32px;
+    margin-right: 16px;
   }
+}
+
+.product-list__item:not(:last-child).item-modal {
+  margin-bottom: 82px;
 }
 
 .address-card {
@@ -163,7 +165,6 @@ a {
   height: 420px;
   padding-top: 124px;
   border-radius: 24px;
-  margin-bottom: 168px;
   font-family: var(--main-font-family);
   color: var(--text-color);
   letter-spacing: 0.04em;
@@ -295,6 +296,14 @@ a {
   line-height: 1.2;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .product-card__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2272727273;
+    letter-spacing: 0.04em;
+  }
+}
 
 .product-card__title.title-modal {
   font-size: 16px;
@@ -318,6 +327,11 @@ a {
   transform: translateX(-50%);
   bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .product-card__arrow {
+    bottom: 12px;
+  }
+}
 
 .title-first-line {
   font-family: var(--main-font-family);
@@ -331,6 +345,13 @@ a {
   text-transform: uppercase;
   color: var(--text-color);
 }
+@media screen and (min-width: 768px) {
+  .title-first-line {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.2272727273;
+  }
+}
 
 .title-second-line {
   font-family: var(--second-font-family);
@@ -342,6 +363,13 @@ a {
   text-transform: uppercase;
   color: var(--text-color);
 }
+@media screen and (min-width: 768px) {
+  .title-second-line {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.2647058824;
+  }
+}
 
 .title-odd {
   color: var(--contrast-color);
@@ -351,14 +379,6 @@ a {
   margin: 0 60px;
 }
 
-/* .modal-title{
-  font-family: var(--second-font-family);
-  font-style: normal;
-  @include font(16px,400,24px);
-  text-align: center;
-
-  color: var(--text-color);
-} */
 .backdrop {
   position: fixed;
   top: 0;
