@@ -16,6 +16,12 @@
         width: 440px;
         height: 204px;
     }
+
+    @media screen and (min-width:768px) {
+      top: -144px;
+      width: 704px;
+      height: 327px;
+    }
   }
 
   .gallery-img.active {

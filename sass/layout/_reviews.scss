@@ -21,21 +21,34 @@
   padding: 35px 39px;
   border-radius: 10px;
   background: var(--green-bg-color);
+
+  @media screen and (min-width:768px) {
+    width: 100%;
+    padding: 28px 80px;
+  }
 }
 .review-text {
-  width: 202px;
+  /* width: 202px; */
   margin-left: auto;
   margin-right: auto;
   color: var(--contrast-color);
   text-align: center;
   font-family: var(--main-font-family);
   @include font(12px, 400, 31px);
+
+  @media screen and (min-width:768px) {
+    @include font(14px, 500, 26px);
+  }
 }
 .review-title {
   text-align: center;
   @include font(20px, 500, 37px);
   color: var(--text-color);
   font-family: var(--main-font-family);
+
+  @media screen and (min-width:768px) {
+    @include font(16px, 500, 30px);
+  }
 }
 .review-nav {
   display: flex;
