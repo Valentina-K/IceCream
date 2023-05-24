@@ -150,6 +150,11 @@ a {
 .product-list__item:not(:last-child).item-modal {
   margin-bottom: 82px;
 }
+@media screen and (min-width: 768px) {
+  .product-list__item:not(:last-child).item-modal {
+    margin-bottom: 0;
+  }
+}
 
 .address-card {
   min-width: 280px;
@@ -1097,6 +1102,35 @@ td:last-child {
   padding-bottom: 68px;
 }
 
+.l-wrap-advantages {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .l-wrap-advantages {
+    display: flex;
+  }
+}
+
+.advantages-item {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    width: 152px;
+    margin: 0 44px 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-item:not(:last-child) {
+    margin-right: 80px;
+  }
+}
+
 .icon-thumb {
   width: 50px;
   height: 50px;
@@ -1105,6 +1139,11 @@ td:last-child {
   margin-bottom: 16px;
   background: var(--accent-color);
   border-radius: 25px;
+}
+@media screen and (min-width: 768px) {
+  .icon-thumb {
+    margin-bottom: 32px;
+  }
 }
 
 .icons {
@@ -1124,18 +1163,33 @@ td:last-child {
   text-transform: uppercase;
   color: var(--contrast-color);
 }
+@media screen and (min-width: 768px) {
+  .advantage-title-description {
+    margin-bottom: 12px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2291666667;
+  }
+}
 
 .description {
   font-family: var(--main-font-family);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.6666666667;
-  width: 230px;
-  margin-bottom: 22px;
+  /* width: 230px;
+  margin-bottom: 22px; */
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   color: var(--contrast-color);
+}
+@media screen and (min-width: 768px) {
+  .description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7142857143;
+  }
 }
 
 .reviews {
@@ -1305,9 +1359,25 @@ td:last-child {
 .about-section {
   padding-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+  .about-section {
+    padding-bottom: 60px;
+  }
+}
 
 .about-title {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .about-title {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-content {
+    display: flex;
+  }
 }
 
 .about-circle {
@@ -1319,6 +1389,14 @@ td:last-child {
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   border-radius: 140px;
 }
+@media screen and (min-width: 768px) {
+  .about-circle {
+    margin: 0;
+    width: 330px;
+    height: 330px;
+    border-radius: 165px;
+  }
+}
 
 .about-img {
   margin-left: auto;
@@ -1326,6 +1404,28 @@ td:last-child {
   margin-bottom: 40px;
   border-radius: 50%;
   margin-top: -256px;
+  /* background-image: url(../images/mobile/cow.jpg);
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/cow@2x.jpg);
+  }
+
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/cow@3x.jpg);
+  } */
+}
+@media screen and (min-width: 768px) {
+  .about-img {
+    margin: 0;
+    margin-top: -304px;
+    border-radius: 1228px;
+    width: 330px;
+    height: 330px;
+  }
 }
 
 .about-text {
@@ -1340,12 +1440,31 @@ td:last-child {
   letter-spacing: 0.04em;
   color: var(--contrast-color);
 }
+@media screen and (min-width: 768px) {
+  .about-text {
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.75;
+    text-align: left;
+    margin-left: 38px;
+    width: 336px;
+  }
+}
 
 .text-two-pice {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.625;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .text-two-pice {
+    margin-bottom: 32px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.9166666667;
+  }
 }
 
 .about-btn {

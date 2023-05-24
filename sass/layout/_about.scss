@@ -1,8 +1,22 @@
 .about-section{
     padding-bottom: 50px;
+
+    @media screen and (min-width:768px) {
+      padding-bottom: 60px;
+    }
 }
 .about-title {
     margin-bottom: 32px;
+
+    @media screen and (min-width:768px) {
+      margin-bottom: 80px;
+    }
+}
+
+.about-content{
+  @media screen and (min-width:768px) {
+    display: flex;
+  }
 }
 
 .about-circle {
@@ -19,28 +33,75 @@
       #d9d9d9;
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
     border-radius: 140px;
+
+    @media screen and (min-width:768px) {
+      margin: 0;
+      width: 330px;
+      height: 330px;
+      border-radius: 165px;
+    }
 }
   .about-img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
     border-radius: 50%;
-    margin-top: -256px;
+    margin-top: -256px;    
+
+    /* background-image: url(../images/mobile/cow.jpg);
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/cow@2x.jpg);
   }
+
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/cow@3x.jpg);
+  } */
+    
+    @media screen and (min-width:768px) {
+      margin: 0;
+      margin-top: -304px;
+      border-radius: 1228px;
+      width: 330px;
+      height: 330px;
+    }
+  }
+
+   
+  
   .about-text {
     width: 220px;
     margin-left: auto;
     margin-right: auto;
+    
     font-family: var(--main-font-family);
     @include font(12px, 400, 21px);
     text-align: center;
     letter-spacing: 0.04em;
   
     color: var(--contrast-color);
+
+    @media screen and  (min-width:768px) {
+      padding-top: 8px;
+      @include font(12px, 400, 21px);
+      text-align: left;
+      margin-left: 38px;
+      width: 336px;
+    }
   }
+ 
   .text-two-pice {
     @include font(12px, 400, 19.5px);
     margin-bottom: 24px;
+
+    @media screen and (min-width:768px) {
+      margin-bottom: 32px;
+      @include font(12px, 400, 23px);
+    }
   }
   .about-btn {
     width: 164px;
