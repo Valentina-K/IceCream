@@ -383,12 +383,12 @@
         </div>
       </div>         
     </section>
-    <section id="gallery" class="container">
+    <section id="gallery" class="container gallery-container">
       <ul class="gallery-thumb list">
         <li class="gallery-img">
           <img 
-          srcset="./images/mobile/brooke-lark.jpg 1x, ./images/mobile/brooke-lark@2x.jpg 2x, ./images/mobile/brooke-lark@3x.jpg 3x" 
-          src="./images/mobile/brooke-lark.jpg" 
+          srcset="./images/mobile/imgGallery1.jpg 1x, ./images/mobile/imgGallery1@2x.jpg 2x, ./images/mobile/imgGallery1@3x.jpg 3x" 
+          src="./images/mobile/imgGallery1.jpg" 
           alt="Brooke lark 1">
         </li>
         <li class="gallery-img">
@@ -506,18 +506,20 @@
             <a class="communication" href="mailto:noreply@envato.com">noreply@envato.com</a>
           </li>
         </ul>
-        <button type="button" class="button yellow-btn contacts-btn" location-modal-open>
-          Our Locations
-          <svg width="12" height="12">
-            <use href="./images/icons.svg#icon-arrow-right"></use>
-          </svg>
-        </button>      
-        <button type="button" class="button green-btn contacts-btn" franchise-modal-open>
-          Franchise
-          <svg width="12" height="12">
-            <use href="./images/icons.svg#icon-arrow-right"></use>
-          </svg>
-        </button>   
+        <div class="contacts-button-thumb">
+          <button type="button" class="button yellow-btn contacts-btn" location-modal-open>
+            Our Locations
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>      
+          <button type="button" class="button green-btn contacts-btn" franchise-modal-open>
+            Franchise
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>  
+        </div> 
       </div>   
     </section>
     <div class="backdrop is-hidden" data-madal-buy>
@@ -608,37 +610,42 @@
       </div>
     </div>
     <footer class="odd container footer">
-      <p class="title-first-line title-odd footer-title-first-line">homemade ice cream made</p>
-      <p class="footer-title">with passion</p>
-      <ul class="footer-social__list list">
-        <li class="footer-social-list__item">
-          <a class="social-list__link link" href="https://github.com/" target="_blank"
-            ><svg class="social-list__icon foot" width="34" height="34">
-              <use href="./images/social-icons.svg#icon-github"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-social-list__item">
-          <a class="social-list__link link" href="https://web.telegram.org/k/" target="_blank"
-            ><svg class="social-list__icon foot" width="34" height="34">
-              <use href="./images/social-icons.svg#icon-telegram"></use>
-            </svg>
-          </a>
-        </li>        
-        <li class="footer-social-list__item">
-          <a class="social-list__link link" href="https://uk-ua.facebook.com/" target="_blank"
-            ><svg class="social-list__icon foot" width="34" height="34">
-              <use href="./images/social-icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>        
-      </ul>
-      <a href="tel:+610383766284" class="link footer-link"><span class="footer-address-text">Feel free to contact </span><span class="footer-address-phone">+61 (0) 383 766 284</span></a>
+      <div class="footer-content-thumb">
+        <div class="footer-title-thumb">
+          <p class="title-first-line title-odd footer-title-first-line">homemade ice cream made</p>
+          <p class="footer-title">with passion</p>
+        </div>
+        <div class="footer-contacts-thumb">
+          <ul class="footer-social__list list">
+            <li class="footer-social-list__item">
+              <a class="social-list__link link" href="https://github.com/" target="_blank"
+                ><svg class="social-list__icon foot" width="34" height="34">
+                  <use href="./images/social-icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list__item">
+              <a class="social-list__link link" href="https://web.telegram.org/k/" target="_blank"
+                ><svg class="social-list__icon foot" width="34" height="34">
+                  <use href="./images/social-icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>        
+            <li class="footer-social-list__item">
+              <a class="social-list__link link" href="https://uk-ua.facebook.com/" target="_blank"
+                ><svg class="social-list__icon foot" width="34" height="34">
+                  <use href="./images/social-icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>        
+          </ul>
+          <a href="tel:+610383766284" class="link footer-link"><span class="footer-address-text">Feel free to contact </span><span class="footer-address-phone">+61 (0) 383 766 284</span></a>
+        </div>
+      </div>           
       <hr class="footer-line"/>
-      <p class="footer-text">© 2022 - IceCream.</p>
-      <p class="footer-text">All Rights Reserved.</p>
+      <p class="footer-text">© 2022 - IceCream. <span class="footer-second-line">All Rights Reserved.</span></p>
     </footer>
-    <!-- <script src="./js/gallery.js"></script> -->
+    <script src="./js/gallery.js"></script>
     <script src="./js/modal-about.js"></script>
     <script src="./js/modal-product.js"></script>
     <script src="./js/mobile-menu.js"></script>

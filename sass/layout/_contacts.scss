@@ -5,10 +5,22 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width:768px) {
+    top: -300px;
+    width: 100%;
+  }
  
 }
+
 .contacts-list {
   margin-bottom: 20px;
+
+  @media screen and (min-width:768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
 }
 .contacts-list__item {
   display: block;
@@ -18,13 +30,28 @@
  
   background-color: var(--contrast-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  @media screen and (min-width:768px) {
+    width: 224px;
+    margin-bottom: 0;
+    padding: 40px 24px;
+  }
 }
 
 .contacts-list__item > hr{
   margin-bottom: 24px;
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts-list__item:not(:last-child) {
   margin-bottom: 16px;
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
 }
 
 .contacts-representative {
@@ -45,6 +72,13 @@
   letter-spacing: 0.04em;
 
   color: var(--text-color);
+
+  @media screen and (min-width:768px) {
+    padding: 4px 10px;
+    margin-bottom: 32px;
+
+    @include font(16px,500,22px);
+  }
 }
 
 
@@ -57,6 +91,11 @@
   letter-spacing: 0.04em;
 
   color: var(--text-color);
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 12px;
+    @include font(14px,500,26px);
+  }
 }
 
 .contacts-address{
@@ -68,21 +107,28 @@
   letter-spacing: 0.04em;
 
   color: var(--milk-card-bg-color);
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 32px;
+    @include font(14px,500,26px);
+  }
 }
 
-.days{
+.week{
   font-family: var(--main-font-family);
   font-style: normal;
   @include font(12px,500,22px);
 
-  color: var(--text-color);
+  @media screen and (min-width:768px) {
+    margin-bottom: 32px;
+    @include font(14px,500,26px);
+  }
+}
+.days{
+  color: var(--text-color); 
 }
 
 .times{
-  font-family: var(--main-font-family);
-  font-style: normal;
-  @include font(12px,500,22px);
-
   color: #ABABAB;
 }
 
@@ -92,19 +138,45 @@
   @include font(12px,500,19px);
 
   color: var(--text-color);
+
+  @media screen and (min-width:768px) {
+    /* margin-bottom: 4px; */
+    @include font(14px,500,21px);
+  }
+}
+
+.contacts-button-thumb{
+  @media screen and (min-width:768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contacts-btn{
   margin-left: 50%;
   transform: translateX(-50%);
+  @include font(12px, 600, 18px);
+  text-align: center;
+
+  @media screen and (min-width:768px) {
+    margin-left: 0;
+    transform: none;
+    @include font(14px, 600, 18px);
+  }
 }
 
-.contacts-btn{
-  @include font(12px, 600, 18px);
+.contacts-btn:first-child{
+  @media screen and (min-width:768px) {
+    margin-right: 16px;
+  }
 }
 
 .contacts-btn.yellow-btn{
   margin-bottom: 16px;
   
   color: var(--text-color);
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 0;
+  }
 }
