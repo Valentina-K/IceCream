@@ -29,5 +29,10 @@
 }
 .gallery.active {
   display: block;
+  margin-bottom: 12px;
   animation: fadeImg 0.9s;
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 32px;
+  }
 }

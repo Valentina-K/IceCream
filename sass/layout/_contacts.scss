@@ -1,13 +1,20 @@
-
+.contacts{
+  position:relative;
+}
 .contacts-thumb{
-  position: relative;
+  position: absolute;
   top: -352px; 
   width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media screen and (min-width:768px) {
     top: -300px;
+    width: 100%;
+  }
+
+  @media screen and (min-width:1200px) {
+    top: -128px;
     width: 100%;
   }
  
@@ -20,6 +27,12 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+  }
+
+  @media screen and (min-width:1200px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
   }
 }
 .contacts-list__item {
@@ -36,6 +49,12 @@
     margin-bottom: 0;
     padding: 40px 24px;
   }
+
+  @media screen and (min-width:1200px) {
+    width: 368px;
+    margin-bottom: 0;
+    padding: 40px;
+  }
 }
 
 .contacts-list__item > hr{
@@ -51,6 +70,11 @@
   @media screen and (min-width:768px) {
     margin-bottom: 0;
     margin-right: 16px;
+  }
+
+  @media screen and (min-width:1200px) {
+    margin-bottom: 0;
+    margin-right: 32px;
   }
 }
 
@@ -79,6 +103,10 @@
 
     @include font(16px,500,22px);
   }
+
+  @media screen and (min-width:1200px) {
+    padding: 4px 14px;
+  }
 }
 
 
@@ -96,6 +124,11 @@
     margin-bottom: 12px;
     @include font(14px,500,26px);
   }
+
+  @media screen and (min-width:1200px) {
+    margin-bottom: 8px;
+    @include font(16px,500,30px);
+  }
 }
 
 .contacts-address{
@@ -112,6 +145,11 @@
     margin-bottom: 32px;
     @include font(14px,500,26px);
   }
+
+  @media screen and (min-width:1200px) {
+    margin-bottom: 32px;
+    @include font(16px,500,29px);
+  }
 }
 
 .week{
@@ -123,6 +161,11 @@
     margin-bottom: 32px;
     @include font(14px,500,26px);
   }
+
+  @media screen and (min-width:1200px) {
+    margin-bottom: 32px;
+    @include font(16px,500,30px);
+  }
 }
 .days{
   color: var(--text-color); 
@@ -130,6 +173,12 @@
 
 .times{
   color: #ABABAB;
+}
+
+.times:first-child{
+  @media screen and (min-width:1200px) {
+    margin-bottom: 12px;
+  }
 }
 
 .communication{
@@ -142,6 +191,11 @@
   @media screen and (min-width:768px) {
     /* margin-bottom: 4px; */
     @include font(14px,500,21px);
+  }
+
+  @media screen and (min-width:1200px) {
+    margin-bottom: 4px;
+    @include font(16px,500,24px);
   }
 }
 

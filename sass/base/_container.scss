@@ -4,15 +4,17 @@
   margin-left: auto;
   width: 100%;
   @media screen and (min-width: 480px) {
-    /* width: 480px */
+    width: 480px;
+    padding: 0 100px;
   }
   @media screen and (min-width: 768px) {
-    /* width: 768px; */
+    width: 768px;
     padding: 0 32px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding: 0 16px;
   }
 }
 
@@ -34,9 +36,4 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-
- /*  @media screen and (min-width: 768px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  } */
 }

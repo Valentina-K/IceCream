@@ -15,7 +15,8 @@
 }
 
 .l-wrap-advantages {
-  max-width: 1140px;
+  /* max-width: 1140px; */
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 
@@ -32,6 +33,11 @@
   @media screen and (min-width:768px) {
     width: 152px;  
     margin: 0 44px 22px;
+  }
+
+  @media screen and (min-width:768px) {
+    width: 368px;  
+    margin: 0 44px;
   }
   
 }
@@ -54,6 +60,10 @@
   @media screen and (min-width:768px) {
     margin-bottom: 32px;
   }
+
+  @media screen and (min-width:1200px) {
+    margin-bottom: 40px;
+  }
 }
 .icons {
   transform: translate(-50%, -50%);
@@ -74,6 +84,11 @@
     margin-bottom: 12px;
     @include font(48px, 700, 59px);
   }
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 12px;
+    @include font(58px, 700, 71px);
+  }
 }
 .description {
   font-family: var(--main-font-family);
@@ -88,5 +103,9 @@
 
   @media screen and (min-width:768px) {
     @include font(14px, 400, 24px);
+  }
+
+  @media screen and (min-width:1200px) {
+    @include font(16px, 400, 28px);
   }
 }

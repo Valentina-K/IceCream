@@ -1,11 +1,20 @@
 .footer{
-    position: relative;
-    top: -292px;
+    padding-top: 1095px;
     padding-bottom: 20px;
+
+    @media screen and (min-width:480px) {
+        padding-bottom: 24px;
+        padding-top: 1103px;
+    }
 
     @media screen and (min-width:768px) {
         padding-bottom: 12px;
-        padding-top: 40px;
+        padding-top: 360px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-bottom: 12px;
+        padding-top: 636px;
     }
 }
 
@@ -15,18 +24,28 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .footer-contacts-thumb{
     @media screen and (min-width:768px) {
         padding-top: 60px;
     }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 18px;
+    }
 }
 
 .footer-title{
     margin-bottom: 60px;
     width: 200px;
-    font-family: 'Montserrat';
+    font-family: var(--main-font-family);
     font-style: normal;
     @include font(34px,700,41px);
     letter-spacing: 0.04em;
@@ -37,6 +56,13 @@
     @media screen and (min-width:768px) {
         margin-bottom: 0;
         @include font(48px,700,59px);
+        letter-spacing: 0.06em;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+        width: auto;
+        @include font(58px,700,71px);
         letter-spacing: 0.06em;
     }
 }
@@ -56,6 +82,13 @@
         @include font(26px,700,32px);
         letter-spacing: 0.06em;
     }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 14px;
+        width: auto;
+        @include font(30px,400,37px);
+        letter-spacing: 0.04em;
+    }
 }
 
 .footer-social__list{
@@ -66,10 +99,14 @@
     @media screen and (min-width:768px) {
         margin-bottom: 34px;
     }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 40px;
+    }
 }
 
 .footer-social-list__item:not(:last-child){
-    margin-right: 20px;
+    margin-right: 20px;   
 }
 
 .footer-link{
@@ -92,8 +129,15 @@
     width: 100%;
     left: 0;
 
+    color: #E1E1E1;
+
     @media screen and (min-width:768px) {
         bottom: 50px;
+    }
+
+    @media screen and (min-width:1200px) {
+        position: static;
+        margin-bottom: 12px;        
     }
 }
 
@@ -111,8 +155,16 @@
     @include font(14px,700,21px);
 
     text-align: center;
-
+    letter-spacing: 0.02em;
     color: #7A7A7A;
+
+    @media screen and (min-width:768px) {
+        @include font(14px,700,26px);
+    }
+
+    @media screen and (min-width:1200px) {
+        @include font(12px,700,22px);        
+    }
 }
 
 .footer-second-line{
