@@ -10,7 +10,12 @@
   border: none;
   margin: 0;
   padding: 0;
-  line-height: 0;
+  line-height: 0;  
+}
+.mobile-btn.mobile-menu-btn{
+  @media screen and (min-width:1200px) {
+    display: none;
+  }
 }
 .mobile-menu-btn {
   display: inline-block;

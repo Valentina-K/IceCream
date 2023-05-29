@@ -11,6 +11,11 @@
     padding-bottom: 24px;
     padding-top: 20px;
   }
+
+  @media screen and (min-width:1200px) {
+    padding-bottom: 102px;
+    padding-top: 8px;
+  }
 }
 
 .hero-main-thumb{
@@ -29,9 +34,19 @@
   text-transform: uppercase;
 
   color: var(--contrast-color);
+
+  @media screen and (min-width:1200px) {
+    width: 367px;
+    @include font(38px, 400, 48px);
+  }
 }
+
 .big {
   @include font(32px, 400, 33px);
+
+  @media screen and (min-width:1200px) {
+    @include font(38px, 400, 48px);
+  }
 }
 
 .hero__btn-link {
@@ -65,16 +80,27 @@
     margin-top: 46px;
     margin-left: 184px;
   }
+
+  @media screen and (min-width:1200px) {
+    width: 200px;
+    margin-top: 112px;
+    margin-left: 258px;
+  }
 }
 
 .hero-text{
   @media screen and (min-width:768px) {
-    margin-bottom: 29px;
-    font-family: 'DM Sans';
+    margin-bottom: 12px;
+    font-family: var(--main-font-family);
     font-style: normal;
     @include font(12px,400,17px);
 
-    color: #FFFFFF;
+    color: var(--contrast-color);
+  }
+
+  @media screen and (min-width:1200px) {
+    @include font(14px,400,20px);
+    margin-bottom: 24px;
   }
 }
 
@@ -155,6 +181,11 @@
     left:408px;
     width: 268px;
   }
+
+  @media screen and (min-width:1200px) {
+    left:652px;
+    width: 456px;
+  }
 }
 
 .hero-images__lot-of-ice-cream{
@@ -164,9 +195,45 @@
     position: absolute;
     left: 32px;
     bottom: 12px;
+    width: 152px;
+    height: 152px;
     animation-duration: 250ms;
     animation-name: show_img;
     border-radius: 100%;
+
+    background-image: url(../../images/tablet/lot-of-ice-Cream.jpg);
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/tablet/lot-of-ice-Cream@2x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../../images/tablet/lot-of-ice-Cream@3x.jpg);
+    }
+
+    @media screen and (min-width:1200px) {
+      left: 16px;
+      bottom: 65px;
+      width: 225px;
+      height: 225px;
+      background-image: url(../../images/desktop/lot-of-ice-Cream.jpg);
+      background-repeat: no-repeat;
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/desktop/lot-of-ice-Cream@2x.jpg);
+      }
+
+      @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../../images/desktop/lot-of-ice-Cream@3x.jpg);
+      }
+    }
   }
 }
 .hero-images__points{

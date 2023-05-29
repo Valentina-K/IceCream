@@ -693,6 +693,12 @@ a {
   line-height: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .mobile-btn.mobile-menu-btn {
+    display: none;
+  }
+}
+
 .mobile-menu-btn {
   display: inline-block;
 }
@@ -822,6 +828,11 @@ a {
 .backdrop.is-hidden .modal-product {
   transform: scale(0.5);
 }
+@media screen and (min-width: 768px) {
+  .modal-product {
+    padding: 32px 40px;
+  }
+}
 
 .modal-product__close-icon {
   fill: var(--text-color);
@@ -871,6 +882,11 @@ a {
 
 .modal-product-list__item:not(:last-child) {
   margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .modal-product-list__item:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 
 .modal-product__component {
@@ -1045,10 +1061,30 @@ td:last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* display: none;
-  @media screen and (min-width: 768px) {
+}
+
+.menu-list {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .menu-list {
     display: flex;
-  } */
+    align-items: flex-start;
+    padding: 0px;
+    gap: 28px;
+  }
+}
+
+.menu-list__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.menu-list__link {
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--contrast-color);
 }
 
 .btn-thumb {
@@ -1080,6 +1116,12 @@ td:last-child {
     padding-top: 20px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 102px;
+    padding-top: 8px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .hero-main-thumb {
@@ -1101,11 +1143,26 @@ td:last-child {
   text-transform: uppercase;
   color: var(--contrast-color);
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 367px;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2631578947;
+  }
+}
 
 .big {
   font-size: 32px;
   font-weight: 400;
   line-height: 1.03125;
+}
+@media screen and (min-width: 1200px) {
+  .big {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2631578947;
+  }
 }
 
 .hero__btn-link {
@@ -1146,16 +1203,31 @@ td:last-child {
     margin-left: 184px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero-text-thumb {
+    width: 200px;
+    margin-top: 112px;
+    margin-left: 258px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .hero-text {
-    margin-bottom: 29px;
-    font-family: "DM Sans";
+    margin-bottom: 12px;
+    font-family: var(--main-font-family);
     font-style: normal;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.4166666667;
-    color: #FFFFFF;
+    color: var(--contrast-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4285714286;
+    margin-bottom: 24px;
   }
 }
 
@@ -1246,6 +1318,12 @@ td:last-child {
     width: 268px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero-images__ice {
+    left: 652px;
+    width: 456px;
+  }
+}
 
 .hero-images__lot-of-ice-cream {
   display: none;
@@ -1256,9 +1334,43 @@ td:last-child {
     position: absolute;
     left: 32px;
     bottom: 12px;
+    width: 152px;
+    height: 152px;
     animation-duration: 250ms;
     animation-name: show_img;
     border-radius: 100%;
+    background-image: url(../../images/tablet/lot-of-ice-Cream.jpg);
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-images__lot-of-ice-cream {
+    background-image: url(../../images/tablet/lot-of-ice-Cream@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 3dppx) {
+  .hero-images__lot-of-ice-cream {
+    background-image: url(../../images/tablet/lot-of-ice-Cream@3x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero-images__lot-of-ice-cream {
+    left: 16px;
+    bottom: 65px;
+    width: 225px;
+    height: 225px;
+    background-image: url(../../images/desktop/lot-of-ice-Cream.jpg);
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-images__lot-of-ice-cream {
+    background-image: url(../../images/desktop/lot-of-ice-Cream@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .hero-images__lot-of-ice-cream {
+    background-image: url(../../images/desktop/lot-of-ice-Cream@3x.jpg);
   }
 }
 

@@ -7,11 +7,28 @@
 }
 .navigation {
   @include flex(flex, space-between, center);
+}
 
-  /* display: none;
-  @media screen and (min-width: 768px) {
+.menu-list{
+  display: none;
+
+  @media screen and (min-width:1200px) {
     display: flex;
-  } */
+    align-items: flex-start;
+    padding: 0px;
+    gap: 28px;
+  }
+}
+
+.menu-list__item:not(:last-child){
+  margin-right: 28px;
+}
+
+.menu-list__link{
+  font-family: var(--main-font-family);
+  @include font(16px, 700, 20px);
+  
+  color: var(--contrast-color);
 }
 
 .btn-thumb{

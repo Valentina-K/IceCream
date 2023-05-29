@@ -8,6 +8,10 @@
     .backdrop.is-hidden & {
         transform: scale(0.5);
       }
+
+      @media screen and (min-width:768px) {
+        padding: 32px 40px;
+      }
 }
 
 .modal-product__close-icon{
@@ -53,6 +57,10 @@
 }
 .modal-product-list__item:not(:last-child){
     margin-right: 10px;
+
+    @media screen and (min-width:768px) {
+        margin-right: 20px;
+    }
 }
 .modal-product__component{
     width: 52px;
