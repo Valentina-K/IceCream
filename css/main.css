@@ -613,8 +613,18 @@ a {
   font-family: var(--second-font-family);
   font-style: normal;
   margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
   text-align: center;
   color: var(--text-color);
+}
+@media screen and (min-width: 768px) {
+  .modal-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
 }
 
 .information {
@@ -625,6 +635,13 @@ a {
   line-height: 1.4285714286;
   margin-bottom: 24px;
   color: var(--text-color);
+}
+@media screen and (min-width: 768px) {
+  .information {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.375;
+  }
 }
 
 .contact-form__text {
@@ -1016,9 +1033,20 @@ td:last-child {
 .backdrop.is-hidden .modal-about {
   transform: scale(0.5);
 }
+@media screen and (min-width: 768px) {
+  .modal-about {
+    padding: 32px 60px;
+  }
+}
 
 .modal-about__title {
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .modal-about__title {
+    margin-bottom: 32px;
+  }
 }
 
 .video {
@@ -1026,6 +1054,11 @@ td:last-child {
   margin-bottom: 20px;
   background: var(--text-color);
   border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .video {
+    padding: 84px 206px;
+  }
 }
 
 .map {

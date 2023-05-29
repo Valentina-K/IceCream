@@ -40,10 +40,15 @@
   font-family: var(--second-font-family);
   font-style: normal;  
   margin-bottom: 20px;
+  @include font(16px,400,24px);
 
   text-align: center;
 
-  color: var(--text-color);  
+  color: var(--text-color); 
+  
+  @media screen and (min-width:768px) {
+    @include font(20px,400,28px);
+  }
 }
 
   .information{
@@ -53,6 +58,10 @@
     margin-bottom: 24px;
 
     color: var(--text-color);
+
+    @media screen and (min-width:768px) {
+      @include font(16px,400,22px);
+    }
   }
 
   .contact-form__text{
