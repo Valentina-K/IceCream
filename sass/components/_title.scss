@@ -13,6 +13,11 @@
   @media screen and (min-width:768px) {
     @include font(22px, 800, 27px);
   }
+
+  @media screen and (min-width:768px) {
+    @include font(30px, 800, 37px);
+    letter-spacing: 0.04em;
+  }
 }
 .title-second-line {
   font-family: var(--second-font-family);
@@ -26,6 +31,11 @@
 
   @media screen and (min-width:768px) {
     @include font(34px, 400, 43px);
+  }
+
+  @media screen and (min-width:768px) {
+    @include font(36px, 400, 45px);
+    letter-spacing: 0.06em;
   }
 }
 .title-odd {

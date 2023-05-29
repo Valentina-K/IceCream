@@ -23,7 +23,31 @@
 }
 
 .even {
-  background-image: url(../../images/mobile/ФОН.jpg);
+  background-image: url(../../images/mobile/фон.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/mobile/фон@2x.jpg);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../../images/mobile/фон@3x.jpg);
+    }
+  
+  @media screen and (min-width:1200px) {
+    background-image: url(../../images/desktop/Backgroud_desktop.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/desktop/Backgroud_desktop@2x.jpg);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../../images/desktop/Backgroud_desktop@3x.jpg);
+    }
+  }
 }
 .flex-container {
   @include flex(flex, space-between, center);

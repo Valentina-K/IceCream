@@ -1,3 +1,7 @@
 .product-title {
   margin-bottom: 148px;
+
+  @media screen and (min-width:1200px) {
+    margin-bottom: 303px; 
+  }
 }

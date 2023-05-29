@@ -40,27 +40,35 @@
       height: 330px;
       border-radius: 165px;
     }
+
+    @media screen and (min-width:1200px) {
+      margin: 0;
+      width: 490px;
+      height: 490px;
+      border-radius: 250px;
+    }
 }
   .about-img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
     border-radius: 50%;
-    margin-top: -256px;    
+    margin-top: -256px;  
+      
 
-    /* background-image: url(../images/mobile/cow.jpg);
+    background-image: url(../../images/mobile/cow.jpg);
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/mobile/cow@2x.jpg);
+    background-image: url(../../images/mobile/cow@2x.jpg);
   }
 
     @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
-    background-image: url(../images/mobile/cow@3x.jpg);
-  } */
+    background-image: url(../../images/mobile/cow@3x.jpg);
+  }
     
     @media screen and (min-width:768px) {
       margin: 0;
@@ -69,9 +77,39 @@
       width: 330px;
       height: 330px;
     }
+
+    @media screen and (min-width:1200px) {
+      margin: 0;
+      margin-top: -451px;
+      border-radius: 1852.2px;
+      width: 490px;
+      height: 490px;
+
+      background-image: url(../../images/desktop/cow.jpg);
+      background-repeat: no-repeat;
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/desktop/cow@2x.jpg);
+      }
+
+      @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../../images/desktop/cow@3x.jpg);
+      }
+    }
   }
 
-   
+  .about-text-thumb{
+    @media screen and (min-width:768px) {
+      padding-top: 8px;
+    }
+    
+    @media screen and (min-width:1200px) {
+      padding-top: 90px;
+    }
+  } 
   
   .about-text {
     width: 220px;
@@ -86,11 +124,19 @@
     color: var(--contrast-color);
 
     @media screen and  (min-width:768px) {
-      padding-top: 8px;
+      padding-bottom: 8px;
       @include font(12px, 400, 21px);
       text-align: left;
       margin-left: 38px;
       width: 336px;
+    }
+
+    @media screen and  (min-width:1200px) {
+      padding-bottom: 8px;
+      @include font(16px, 400, 28px);
+      text-align: left;
+      margin-left: 109px;
+      width: 463px;
     }
   }
  
@@ -101,6 +147,11 @@
     @media screen and (min-width:768px) {
       margin-bottom: 32px;
       @include font(12px, 400, 23px);
+    }
+
+    @media screen and (min-width:1200px) {
+      margin-bottom: 54px;
+      @include font(14px, 400, 27px);
     }
   }
   .about-btn {
