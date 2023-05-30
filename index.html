@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Ice Cream</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Seymour+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Seymour+One&amp;display=swap"
       rel="stylesheet"
-    />
+    >
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    >
+    <link rel="stylesheet" href="./css/main.min.css" >
   </head>
   <body>
     <section id="hero" class="container odd hero">
@@ -23,7 +23,7 @@
         <!-- <div> -->
           <nav class="navigation">
             <a href="index.html" class="logo">
-              <img src="./images/mobile/лого.png" alt="Logo" />
+              <img src="./images/mobile/лого.png" alt="Logo" >
             </a>
             <ul class="menu-list list">
               <li class="menu-list__item">
@@ -76,7 +76,7 @@
         <div class="mobile-menu" data-menu>
           <div class="mobile-menu__header">
             <a href="index.html" class="logo">
-              <img src="./images/mobile/лого.png" alt="Logo" />
+              <img src="./images/mobile/лого.png" alt="Logo" >
             </a>
             <button class="mobile-btn" data-menu-close>
               <svg class="mobile-menu__close-icon" width="32" height="32">
@@ -141,12 +141,12 @@
           src="./images/mobile/ice-cream.png"
           alt="Морозиво"
           class="hero-images__ice"
-      />       
+      >       
     </section>
     <section id="products" class="even container section">
-      <label for="product-title" class="title-first-line">100% natural</label>
-      <h2 class="product-title" id="product-title">        
-        <p class="title-second-line">Products</p>
+      <p class="title-first-line">100% natural</p>
+      <h2 class="product-title title-second-line">        
+        Products
       </h2>
       <ul class="product-list list">
         <li class="product-list__item">
@@ -213,7 +213,7 @@
               src="./images/mobile/ingredients.jpg"
               class="modal-product__circl-img"
               alt=""
-            />
+            >
           </div>
           <ul class="modal-product-list list">
             <li class="modal-product-list__item">
@@ -281,15 +281,15 @@
           <form class="contact-form">
             <input type="text" placeholder="Name" class="contact-form__text">
             <input type="text" placeholder="Phone" class="contact-form__text">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Comment" class="contact-form__text area"></textarea>
+            <textarea name="comment" id="comment-product" cols="30" rows="10" placeholder="Comment" class="contact-form__text area"></textarea>
             <button type="submit" class="form-btn yellow-btn">Submit</button>
           </form>
         </div>
       </div>
     </section>
     <section id="about" class="odd container section about-section">
-      <label for="about-title" class="title-first-line title-odd">tradition and love</label>
-      <h2 class="about-title title-second-line title-odd one-word" id="about-title">how it’s made?</h2>
+      <p class="title-first-line title-odd">tradition and love</p>
+      <h2 class="about-title title-second-line title-odd one-word">how it’s made?</h2>
       <div class="about-content">
         <div class="about-img-thumb">
           <div class="about-circle"></div>
@@ -298,7 +298,7 @@
         <div class="about-text-thumb">
           <p class="about-text">
           Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when
-          creating our handmade desserts.<br />
+          creating our handmade desserts.<br >
           We use traditional recipes and 100% natural ingredients. Our products
           are so natural that they can be given to children from the age of three
           years. Sweets lovers can expect 55 types of ice cream, 15 types of
@@ -375,6 +375,7 @@
       </div>         
     </section>
     <section id="gallery" class="container gallery-container">
+      <h2 class="visually-hidden">Gallery</h2>   
       <ul class="gallery-thumb list">
         <li class="gallery-thumb__item">
           <img class="gallery-img"
@@ -401,8 +402,8 @@
         <img 
         srcset="./images/mobile/girl.jpg 1x, ./images/mobile/girl@2x.jpg 2x, ./images/mobile/girl@3x.jpg 3x"
         src="./images/mobile/girl.jpg" 
-        class="reviews-circle">
-      </img>
+        class="reviews-circle"
+        alt="girl">
         <div class="review-box">
           <p class="review-text">
             I love visiting your cafe. You prepare the most delicious ice cream
@@ -416,8 +417,8 @@
         <img 
         srcset="./images/mobile/review2.jpg 1x, ./images/mobile/review2@2x.jpg 2x, ./images/mobile/review2@3x.jpg 3x"
         src="./images/mobile/review2.jpg" 
-        class="reviews-circle">
-      </img>
+        class="reviews-circle"
+        alt="boy">
         <div class="review-box">
           <p class="review-text">
             Every day we come to you with friends after classes in college. 
@@ -430,8 +431,8 @@
         <img
         srcset="./images/mobile/review3.jpg 1x, ./images/mobile/review3@2x.jpg 2x, ./images/mobile/review3@3x.jpg 3x" 
         src="./images/mobile/review3.jpg" 
-        class="reviews-circle">
-      </img>
+        class="reviews-circle"
+        alt="other girl">
         <div class="review-box">
           <p class="review-text">
             Ice cream is my passion! I love your chocolate hazelnut ice cream! 
@@ -455,14 +456,14 @@
             <p class="contacts-representative">Caffee</p>
             <h3 class="contacts-title">Chicago</h3>
             <p class="contacts-address">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
-            <hr />
+            <hr >
             <div class="week">
               <p class="days">Monday - Friday</p>
               <p class="times">06:00 AM - 10:00 PM</p>
               <p class="days">Saturday - Sunday</p>
               <p class="times">08:00 AM - 16:00 PM</p>
             </div>
-            <hr />
+            <hr >
             <a class="communication" href="tel:+610383766284">+61(0) 383 766 284</a>
             <a class="communication" href="mailto:noreply@envato.com">noreply@envato.com</a>
           </li>
@@ -470,14 +471,14 @@
             <p class="contacts-representative">Foodtruck</p>
             <h3 class="contacts-title">Los Angeles</h3>
             <p class="contacts-address">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
-            <hr />
+            <hr >
             <div class="week">
               <p class="days">Monday - Friday</p>
               <p class="times">06:00 AM - 10:00 PM</p>
               <p class="days">Saturday - Sunday</p>
               <p class="times">08:00 AM - 16:00 PM</p>
             </div>
-            <hr />
+            <hr >
             <a class="communication" href="tel:+610383766284">+61(0) 383 766 284</a>
             <a class="communication" href="mailto:noreply@envato.com">noreply@envato.com</a>
           </li>
@@ -485,14 +486,14 @@
             <p class="contacts-representative">Caffee</p>
             <h3 class="contacts-title">New York</h3>
             <p class="contacts-address">726 Sterling Pl, Brooklyn, NY 11222, USA</p>
-            <hr />
+            <hr >
             <div class="week">
               <p class="days">Monday - Friday</p>
               <p class="times">06:00 AM - 10:00 PM</p>
               <p class="days">Saturday - Sunday</p>
               <p class="times">08:00 AM - 16:00 PM</p>
             </div>
-            <hr />
+            <hr >
             <a class="communication" href="tel:+610383766284">+61(0) 383 766 284</a>
             <a class="communication" href="mailto:noreply@envato.com">noreply@envato.com</a>
           </li>
@@ -529,7 +530,7 @@
                 src="./images/mobile/ice-cream-ellips.jpg"
                 class="img-modal"
                 alt=""
-              />
+              >
               <h3 class="product-card__title title-modal">Ice Cream</h3>              
             </div>
           </li>
@@ -540,7 +541,7 @@
                 src="./images/mobile/ice-coffee.jpg"
                 class="img-modal"
                 alt=""
-              />
+              >
               <h3 class="product-card__title title-modal">Ice Coffee</h3>              
             </div>
           </li>
@@ -551,7 +552,7 @@
                 src="./images/mobile/milkshake.jpg"
                 class="img-modal"
                 alt=""
-              />
+              >
               <h3 class="product-card__title title-modal">Milkshakes</h3>              
             </div>
           </li>
@@ -559,7 +560,7 @@
         <form class="contact-form form-buy">
           <input type="text" placeholder="Name" class="contact-form__text form-buy">
           <input type="text" placeholder="Phone" class="contact-form__text form-buy">
-          <textarea name="" id=""  placeholder="Comment" class="contact-form__text area"></textarea>
+          <textarea name="comment" id="comment-buy"  placeholder="Comment" class="contact-form__text area"></textarea>
           <button type="submit" class="form-btn yellow-btn form-buy">Submit</button>
         </form>
       </div>
@@ -581,7 +582,7 @@
           <input type="text" placeholder="Name" class="contact-form__text form-buy">
           <input type="text" placeholder="Phone" class="contact-form__text form-buy">
           <input type="text" placeholder="Email" class="contact-form__text form-buy">
-          <textarea name="" id=""  placeholder="Comment" class="contact-form__text area"></textarea>
+          <textarea name="comment" id="comment-franchise"  placeholder="Comment" class="contact-form__text area"></textarea>
           <button type="submit" class="form-btn yellow-btn form-buy">Submit</button>
         </form>
       </div>
@@ -633,7 +634,7 @@
           <a href="tel:+610383766284" class="link footer-link"><span class="footer-address-text">Feel free to contact </span><span class="footer-address-phone">+61 (0) 383 766 284</span></a>
         </div>
       </div>           
-      <hr class="footer-line"/>
+      <hr class="footer-line">
       <p class="footer-text">© 2022 - IceCream. <span class="footer-second-line">All Rights Reserved.</span></p>
     </footer>
     <script src="./js/gallery.js"></script>
