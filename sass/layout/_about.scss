@@ -20,7 +20,7 @@
 }
 
 .about-circle {
-    width: 278px;
+    width: 279px;
     height: 278px;
     margin-left: auto;
     margin-right: auto;
@@ -54,6 +54,8 @@
     margin-bottom: 40px;
     border-radius: 50%;
     margin-top: -256px;  
+    width: 279px;
+    height: 278px;
       
 
     background-image: url(../../images/mobile/cow.jpg);
@@ -76,6 +78,20 @@
       border-radius: 1228px;
       width: 330px;
       height: 330px;
+
+      background-image: url(../../images/tablet/cow.jpg);
+      background-repeat: no-repeat;
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/tablet/cow@2x.jpg);
+      }
+
+      @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../../images/tablet/cow@3x.jpg);
+      }
     }
 
     @media screen and (min-width:1200px) {

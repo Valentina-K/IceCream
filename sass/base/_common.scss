@@ -19,7 +19,7 @@ ul {
 }
 
 .link {
-  text-decoration: none;
+  text-decoration: none;  
 }
 
 .list {
@@ -28,4 +28,9 @@ ul {
 
 a {
   text-decoration: none;
+  cursor:url('../../images/cursor.svg'),pointer;
+}
+
+button{
+  cursor:url('../../images/cursor.svg'),pointer;
 }

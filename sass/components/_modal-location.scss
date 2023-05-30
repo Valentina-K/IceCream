@@ -5,3 +5,14 @@
     @include font(12px, 600, 15px);
     width: 134px;
 }
+
+.map{
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+
+.map > img{
+    margin-left: auto;
+    margin-right: auto;
+}

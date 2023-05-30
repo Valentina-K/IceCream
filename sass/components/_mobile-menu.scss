@@ -26,6 +26,7 @@
 }
 .mobile-menu-button {
   width: 152px;
+  padding: 12px 36px;
   @include font(14px, 600, 17px);
 }
 .mobile-menu-btn__icon {
@@ -70,6 +71,11 @@
 .mobile-menu-list {
   margin-bottom: auto;
   text-align: center;
+  margin-bottom: 110px;
+
+  @media screen and (min-width:480px) {
+    margin-bottom: 114px;
+  }
 }
 .mobile-menu-list__item:not(:last-child) {
   margin-bottom: 32px;
@@ -78,6 +84,18 @@
   font-family: var(--main-font-family);
   @include font(32px, 700, 39px);
   color: var(--contrast-color);
+
+  &:hover{
+    color:var(--hover-color);
+  }
+
+  &:focus{
+    color: var(--contrast-color);
+  }
+
+  &:disabled{
+    color:var(--disable-color);
+  }
 }
 .mobile-menu-list__link.active {
   color: var(--text-color);

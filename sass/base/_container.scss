@@ -35,6 +35,20 @@
     background-image: url(../../images/mobile/фон@3x.jpg);
     }
   
+    @media screen and (min-width:768px) {
+      background-image: url(../../images/tablet/Background_tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/tablet/Background_tablet@2x.jpg);
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../../images/tablet/Background_tablet@3x.jpg);
+      }
+    }
+
   @media screen and (min-width:1200px) {
     background-image: url(../../images/desktop/Backgroud_desktop.jpg);
   @media (min-device-pixel-ratio: 2),

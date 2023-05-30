@@ -29,6 +29,18 @@
   @include font(16px, 700, 20px);
   
   color: var(--contrast-color);
+
+  &:hover{
+    color:var(--accent-color);
+  }
+
+  &:focus{
+    color: var(--accent-color);
+  }
+
+  &:disabled{
+    color:var(--disable-color);
+  }
 }
 
 .btn-thumb{

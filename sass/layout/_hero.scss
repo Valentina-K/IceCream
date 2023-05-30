@@ -70,6 +70,18 @@
   @include font(12px, 600, 15px);
   text-decoration: underline;
   color: var(--accent-color);
+
+  &:hover{
+    color:var(--hover-color);
+  }
+
+  &:focus{
+    color: var(--contrast-color);
+  }
+
+  &:disabled{
+    color:var(--disable-color);
+  }
 }
 
 .hero-text-thumb{
@@ -120,6 +132,10 @@
   text-align: right;
 
   color: var(--text-color);
+
+  @media screen and (min-width:1200px) {
+    @include font(46px,900,56px);
+  }
 }
 
 .hero-text-description{
@@ -129,6 +145,10 @@
   text-align: right;
 
   color: var(--contrast-color);
+
+  @media screen and (min-width:1200px) {
+    @include font(14px,400,17px);
+  }
 }
 
 .hero-text-description:nth-child(n+1){
@@ -144,25 +164,39 @@
 }
 
 .points{
-  @include flex(flex,space-between,end);
   width: 100%;
+  height: 50px;
   left: 0;
   position: absolute;
   bottom: 0;
   animation-duration: 250ms;
   animation-name: show_img;
+  background-image: url('../../images/mobile/points320.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  pointer-events: none;
 
-  @media screen and (min-width:480px) and (max-width:767px) {
+  @media screen and (min-width:480px) {
     width: 330px;
+    height: 52px;
     right: 0;
     left: auto;
+    background-image: url('../../images/mobile/points480.png');
+  }
+
+  @media screen and (min-width:768px) {
+    width: 100%;
+    height: 68px;
+    background-image: url('../../images/tablet/points768.png');
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 100%;
+    height: 384px;
+    background-image: url('../../images/desktop/points1200.png');
   }
 }
 
-.hero-images {    
-  margin-top: 20px;
-  height: 218px;  
-}
 .hero-images__ice{
   position: absolute;
   left: 26%;
@@ -236,19 +270,7 @@
     }
   }
 }
-.hero-images__points{
-  /* width: 100%;
-  left: 0;
-  position: absolute;
-  bottom: 0;
-  animation-duration: 250ms;
-  animation-name: show_img; */
-  
-  @media screen and (min-width: 480px)  {
-    /* width: 330px;
-    left: 150px; */
-  }
-}
+
 @keyframes show_img {
   from{
     transform: scale(0,0);
@@ -258,6 +280,5 @@
   }
   50%{
     transform: scale(0.5,0.5);
-  }
-  
+  }  
 }

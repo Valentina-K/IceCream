@@ -123,6 +123,21 @@
     }
 }
 
+.social-list__link{
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    background: var(--accent-color);
+    border-radius: 25px;
+    &:hover .social-list__icon, 
+    &:focus .social-list__icon{
+        fill: var(--contrast-color);
+    }
+}
+
+.social-list__icon{
+    fill: var(--green-bg-color);
+}
 .footer-line{
     position: absolute;
     bottom: 82px;
