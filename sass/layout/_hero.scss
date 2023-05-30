@@ -171,7 +171,7 @@
   bottom: 0;
   animation-duration: 250ms;
   animation-name: show_img;
-  background-image: url('../../images/mobile/points320.png');
+  background-image: url('./images/mobile/points320.png');
   background-repeat: no-repeat;
   background-size:cover;
   pointer-events: none;
@@ -181,19 +181,19 @@
     height: 52px;
     right: 0;
     left: auto;
-    background-image: url('../../images/mobile/points480.png');
+    background-image: url('./images/mobile/points480.png');
   }
 
   @media screen and (min-width:768px) {
     width: 100%;
     height: 68px;
-    background-image: url('../../images/tablet/points768.png');
+    background-image: url('./images/tablet/points768.png');
   }
 
   @media screen and (min-width:1200px) {
     width: 100%;
     height: 384px;
-    background-image: url('../../images/desktop/points1200.png');
+    background-image: url('./images/desktop/points1200.png');
   }
 }
 
@@ -235,18 +235,18 @@
     animation-name: show_img;
     border-radius: 100%;
 
-    background-image: url(../../images/tablet/lot-of-ice-Cream.jpg);
+    background-image: url(./images/tablet/lot-of-ice-Cream.jpg);
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/tablet/lot-of-ice-Cream@2x.jpg);
+    background-image: url(./images/tablet/lot-of-ice-Cream@2x.jpg);
     }
 
     @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
-    background-image: url(../../images/tablet/lot-of-ice-Cream@3x.jpg);
+    background-image: url(./images/tablet/lot-of-ice-Cream@3x.jpg);
     }
 
     @media screen and (min-width:1200px) {
@@ -254,18 +254,18 @@
       bottom: 65px;
       width: 225px;
       height: 225px;
-      background-image: url(../../images/desktop/lot-of-ice-Cream.jpg);
+      background-image: url(./images/desktop/lot-of-ice-Cream.jpg);
       background-repeat: no-repeat;
       @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/desktop/lot-of-ice-Cream@2x.jpg);
+      background-image: url(./images/desktop/lot-of-ice-Cream@2x.jpg);
       }
 
       @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      background-image: url(../../images/desktop/lot-of-ice-Cream@3x.jpg);
+      background-image: url(./images/desktop/lot-of-ice-Cream@3x.jpg);
       }
     }
   }
