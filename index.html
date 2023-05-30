@@ -1,60 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice Cream</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Seymour+One&amp;display=swap"
       rel="stylesheet"
-    >
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    >
-    <link rel="stylesheet" href="./css/main.min.css" >
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <section id="hero" class="container odd hero">
       <header class="header">
         <!-- <div> -->
-          <nav class="navigation">
-            <a href="index.html" class="logo">
-              <img src="./images/mobile/лого.png" alt="Logo" >
-            </a>
-            <ul class="menu-list list">
-              <li class="menu-list__item">
-                <a 
-                  href="./index.html" 
-                  class="menu-list__link link"
-                  >Home</a
-                >
-              </li>
-              <li class="menu-list__item">
-                <a
-                  href="#about"
-                  class="menu-list__link link"
-                  >How it's make?</a
-                >
-              </li>
-              <li class="menu-list__item">
-                <a
-                  href="#products"
-                  class="menu-list__link link"
-                  >Our products</a
-                >
-              </li>
-              <li class="menu-list__item">
-                <a 
-                  href="#contacts" 
-                  class="menu-list__link link">Contact</a>
-              </li>
-            </ul>
-            <div class="btn-thumb">
-              <button
+        <nav class="navigation">
+          <a href="index.html" class="logo">
+            <img src="./images/mobile/лого.png" alt="Logo" />
+          </a>
+          <ul class="menu-list list">
+            <li class="menu-list__item">
+              <a href="./index.html" class="menu-list__link link">Home</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#about" class="menu-list__link link">How it's make?</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#products" class="menu-list__link link">Our products</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#contacts" class="menu-list__link link">Contact</a>
+            </li>
+          </ul>
+          <div class="btn-thumb">
+            <button
               type="button"
               class="mobile-menu-btn mobile-btn"
               aria-expanded="false"
@@ -68,15 +54,21 @@
               >
                 <use href="./images/icons.svg#icon-mobile-menu"></use>
               </svg>
-              </button>
-              <button type="button" class="button yellow-btn mobile-menu-button tablet-btn" buy-modal-open>Buy now</button>
-            </div>
-          </nav>
+            </button>
+            <button
+              type="button"
+              class="button yellow-btn mobile-menu-button tablet-btn"
+              buy-modal-open
+            >
+              Buy now
+            </button>
+          </div>
+        </nav>
         <!-- </div> -->
         <div class="mobile-menu" data-menu>
           <div class="mobile-menu__header">
             <a href="index.html" class="logo">
-              <img src="./images/mobile/лого.png" alt="Logo" >
+              <img src="./images/mobile/лого.png" alt="Logo" />
             </a>
             <button class="mobile-btn" data-menu-close>
               <svg class="mobile-menu__close-icon" width="32" height="32">
@@ -91,24 +83,28 @@
               >
             </li>
             <li class="mobile-menu-list__item">
-              <a
-                href="#about"
-                class="mobile-menu-list__link link"
+              <a href="#about" class="mobile-menu-list__link link"
                 >How it's make?</a
               >
             </li>
             <li class="mobile-menu-list__item">
-              <a
-                href="#products"
-                class="mobile-menu-list__link link"
+              <a href="#products" class="mobile-menu-list__link link"
                 >Our products</a
               >
             </li>
             <li class="mobile-menu-list__item">
-              <a href="#contacts" class="mobile-menu-list__link link">Contact</a>
+              <a href="#contacts" class="mobile-menu-list__link link"
+                >Contact</a
+              >
             </li>
           </ul>
-          <button type="button" class="button yellow-btn mobile-menu-button mobile-button" buy-modal-open>Buy now</button>
+          <button
+            type="button"
+            class="button yellow-btn mobile-menu-button mobile-button"
+            buy-modal-open
+          >
+            Buy now
+          </button>
         </div>
       </header>
       <div class="hero-main-thumb">
@@ -127,27 +123,36 @@
         </div>
       </div>
       <div class="hero-text-thumb">
-        <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        <button type="button" class="modal-open-btn hero-modal-btn" arrow-modal-open>
-          <svg width="40" height="16" class="hero-arrow" >
+        <p class="hero-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button
+          type="button"
+          class="modal-open-btn hero-modal-btn"
+          arrow-modal-open
+        >
+          <svg width="40" height="16" class="hero-arrow">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
         </button>
-      </div>      
-        <div class="points"></div>
-        <div class="hero-images__lot-of-ice-cream"></div>        
-        <img
-          srcset="./images/mobile/ice-cream.png 1x, ./images/mobile/ice-cream@2x.png 2x, ./images/mobile/ice-cream@3x.png 3x"
-          src="./images/mobile/ice-cream.png"
-          alt="Морозиво"
-          class="hero-images__ice"
-      >       
+      </div>
+      <div class="points"></div>
+      <div class="hero-images__lot-of-ice-cream"></div>
+      <img
+        srcset="
+          ./images/mobile/ice-cream.png    1x,
+          ./images/mobile/ice-cream@2x.png 2x,
+          ./images/mobile/ice-cream@3x.png 3x
+        "
+        src="./images/mobile/ice-cream.png"
+        alt="Морозиво"
+        class="hero-images__ice"
+      />
     </section>
     <section id="products" class="even container section">
       <p class="title-first-line">100% natural</p>
-      <h2 class="product-title title-second-line">        
-        Products
-      </h2>
+      <h2 class="product-title title-second-line">Products</h2>
       <ul class="product-list list">
         <li class="product-list__item">
           <div class="product-card ice-cream">
@@ -159,7 +164,7 @@
               and natural stabilizer
             </p>
             <button type="button" class="modal-open-btn" arrow-modal-open>
-              <svg width="40" height="16" class="product-card__arrow" >
+              <svg width="40" height="16" class="product-card__arrow">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
@@ -199,7 +204,7 @@
         </li>
       </ul>
       <div class="backdrop is-hidden" data-modal-products>
-        <div class="modal-product card-modal" >
+        <div class="modal-product card-modal">
           <button class="mobile-btn close-btn" products-modal-close>
             <svg class="modal-product__close-icon" width="20" height="20">
               <use href="./images/icons.svg#icon-close"></use>
@@ -209,48 +214,46 @@
           <div class="modal-product__image">
             <div class="modal-product__circl"></div>
             <img
-              srcset="./images/mobile/ingredients.jpg 1x, ./images/mobile/ingredients@2x.jpg 2x, ./images/mobile/ingredients@3x.jpg 3x"
+              srcset="
+                ./images/mobile/ingredients.jpg    1x,
+                ./images/mobile/ingredients@2x.jpg 2x,
+                ./images/mobile/ingredients@3x.jpg 3x
+              "
               src="./images/mobile/ingredients.jpg"
               class="modal-product__circl-img"
               alt=""
-            >
+            />
           </div>
           <ul class="modal-product-list list">
             <li class="modal-product-list__item">
               <div class="modal-product__component">
-                <div class="component-circl">
-                  320
-                </div>
+                <div class="component-circl">320</div>
                 <p class="component-text">kcal</p>
               </div>
             </li>
             <li class="modal-product-list__item">
               <div class="modal-product__component">
-                <div class="component-circl">
-                  4g
-                </div>
+                <div class="component-circl">4g</div>
                 <p class="component-text">Prote...</p>
               </div>
             </li>
             <li class="modal-product-list__item">
               <div class="modal-product__component">
-                <div class="component-circl">
-                  8.2g
-                </div>
+                <div class="component-circl">8.2g</div>
                 <p class="component-text">Fats</p>
               </div>
             </li>
             <li class="modal-product-list__item">
               <div class="modal-product__component">
-                <div class="component-circl">
-                  40.4g
-                </div>
+                <div class="component-circl">40.4g</div>
                 <p class="component-text">Carbs</p>
               </div>
             </li>
           </ul>
           <table class="table">
-            <caption class="table-caption">Ingredients</caption>
+            <caption class="table-caption">
+              Ingredients
+            </caption>
             <tbody class="table-body">
               <tr>
                 <td>Milk</td>
@@ -279,9 +282,16 @@
             </tbody>
           </table>
           <form class="contact-form">
-            <input type="text" placeholder="Name" class="contact-form__text">
-            <input type="text" placeholder="Phone" class="contact-form__text">
-            <textarea name="comment" id="comment-product" cols="30" rows="10" placeholder="Comment" class="contact-form__text area"></textarea>
+            <input type="text" placeholder="Name" class="contact-form__text" />
+            <input type="text" placeholder="Phone" class="contact-form__text" />
+            <textarea
+              name="comment"
+              id="comment-product"
+              cols="30"
+              rows="10"
+              placeholder="Comment"
+              class="contact-form__text area"
+            ></textarea>
             <button type="submit" class="form-btn yellow-btn">Submit</button>
           </form>
         </div>
@@ -289,31 +299,34 @@
     </section>
     <section id="about" class="odd container section about-section">
       <p class="title-first-line title-odd">tradition and love</p>
-      <h2 class="about-title title-second-line title-odd one-word">how it’s made?</h2>
+      <h2 class="about-title title-second-line title-odd one-word">
+        how it’s made?
+      </h2>
       <div class="about-content">
         <div class="about-img-thumb">
           <div class="about-circle"></div>
-          <div class="about-img"></div>         
-        </div> 
+          <div class="about-img"></div>
+        </div>
         <div class="about-text-thumb">
           <p class="about-text">
-          Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when
-          creating our handmade desserts.<br >
-          We use traditional recipes and 100% natural ingredients. Our products
-          are so natural that they can be given to children from the age of three
-          years. Sweets lovers can expect 55 types of ice cream, 15 types of
-          coffee and 23 milkshakes.
+            Ice is a place where you will become not only a little happier, but
+            also healthier. Health is the main value for us, and we follow it
+            when creating our handmade desserts.<br />
+            We use traditional recipes and 100% natural ingredients. Our
+            products are so natural that they can be given to children from the
+            age of three years. Sweets lovers can expect 55 types of ice cream,
+            15 types of coffee and 23 milkshakes.
           </p>
           <p class="about-text text-two-pice">
             This is enough to choose ice cream and coffee for any mood!
-          </p> 
+          </p>
           <button class="button yellow-btn about-btn btn-icon" about-modal-open>
             Read more
             <svg width="12" height="12">
               <use href="./images/icons.svg#icon-arrow-right"></use>
             </svg>
-          </button>   
-        </div>        
+          </button>
+        </div>
       </div>
       <div class="backdrop is-hidden" data-madal-about>
         <div class="modal-about card-modal">
@@ -328,16 +341,17 @@
               <use href="./images/icons.svg#icon-vector"></use>
             </svg>
           </div>
-          <p class="information">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-             sed do eiusmod tempor incididunt ut labore et Lorem ipsum 
-             dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-             tempor incididunt ut labore et
+          <p class="information">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et
           </p>
         </div>
       </div>
     </section>
     <section id="advantages" class="odd container advantage-section">
-      <h2 class="visually-hidden">Advantages</h2>   
+      <h2 class="visually-hidden">Advantages</h2>
       <div class="l-wrap-advantages">
         <div class="advantages-item">
           <div class="icon-thumb">
@@ -372,38 +386,61 @@
             Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
           </p>
         </div>
-      </div>         
+      </div>
     </section>
     <section id="gallery" class="container gallery-container">
-      <h2 class="visually-hidden">Gallery</h2>   
+      <h2 class="visually-hidden">Gallery</h2>
       <ul class="gallery-thumb list">
         <li class="gallery-thumb__item">
-          <img class="gallery-img"
-          srcset="./images/mobile/imageGallery1.jpg 1x, ./images/mobile/imageGallery1@2x.jpg 2x, ./images/mobile/imageGallery1@3x.jpg 3x" 
-          src="./images/mobile/imgGallery1.jpg" 
-          alt="Brooke lark 1">
+          <img
+            class="gallery-img"
+            srcset="
+              ./images/mobile/imageGallery1.jpg    1x,
+              ./images/mobile/imageGallery1@2x.jpg 2x,
+              ./images/mobile/imageGallery1@3x.jpg 3x
+            "
+            src="./images/mobile/imgGallery1.jpg"
+            alt="Brooke lark 1"
+          />
         </li>
         <li class="gallery-thumb__item">
-          <img class="gallery-img"
-          srcset="./images/mobile/imgGallery2.jpg 1x, ./images/mobile/imgGallery2@2x.jpg 2x, ./images/mobile/imgGallery2@3x.jpg 3x" 
-          src="./images/mobile/imgGallery2.jpg" 
-          alt="Brooke lark 2">
+          <img
+            class="gallery-img"
+            srcset="
+              ./images/mobile/imgGallery2.jpg    1x,
+              ./images/mobile/imgGallery2@2x.jpg 2x,
+              ./images/mobile/imgGallery2@3x.jpg 3x
+            "
+            src="./images/mobile/imgGallery2.jpg"
+            alt="Brooke lark 2"
+          />
         </li>
         <li class="gallery-thumb__item">
-          <img class="gallery-img"
-          srcset="./images/mobile/imgGallery3.jpg 1x, ./images/mobile/imgGallery3@2x.jpg 2x, ./images/mobile/imgGallery3@3x.jpg 3x" 
-          src="./images/mobile/imgGallery3.jpg" 
-          alt="Brooke lark 3">
+          <img
+            class="gallery-img"
+            srcset="
+              ./images/mobile/imgGallery3.jpg    1x,
+              ./images/mobile/imgGallery3@2x.jpg 2x,
+              ./images/mobile/imgGallery3@3x.jpg 3x
+            "
+            src="./images/mobile/imgGallery3.jpg"
+            alt="Brooke lark 3"
+          />
         </li>
       </ul>
     </section>
-    <section id="reviews" class="reviews container even">      
+    <section id="reviews" class="reviews container even">
       <div class="gallery active">
-        <img 
-        srcset="./images/mobile/girl.jpg 1x, ./images/mobile/girl@2x.jpg 2x, ./images/mobile/girl@3x.jpg 3x"
-        src="./images/mobile/girl.jpg" 
-        class="reviews-circle"
-        alt="girl">
+        <img
+          srcset="
+            ./images/mobile/girl.jpg    1x,
+            ./images/mobile/girl@2x.jpg 2x,
+            ./images/mobile/girl@3x.jpg 3x
+          "
+          src="./images/mobile/girl.jpg"
+          class="reviews-circle"
+          alt="girl"
+        />
         <div class="review-box">
           <p class="review-text">
             I love visiting your cafe. You prepare the most delicious ice cream
@@ -414,30 +451,40 @@
         <h3 class="review-title">Emily, Los Angeles</h3>
       </div>
       <div class="gallery">
-        <img 
-        srcset="./images/mobile/review2.jpg 1x, ./images/mobile/review2@2x.jpg 2x, ./images/mobile/review2@3x.jpg 3x"
-        src="./images/mobile/review2.jpg" 
-        class="reviews-circle"
-        alt="boy">
+        <img
+          srcset="
+            ./images/mobile/review2.jpg    1x,
+            ./images/mobile/review2@2x.jpg 2x,
+            ./images/mobile/review2@3x.jpg 3x
+          "
+          src="./images/mobile/review2.jpg"
+          class="reviews-circle"
+          alt="boy"
+        />
         <div class="review-box">
           <p class="review-text">
-            Every day we come to you with friends after classes in college. 
-            We love your ice cream and casual atmosphere!
+            Every day we come to you with friends after classes in college. We
+            love your ice cream and casual atmosphere!
           </p>
         </div>
         <h3 class="review-title">Emily, Los Angeles</h3>
       </div>
       <div class="gallery">
         <img
-        srcset="./images/mobile/review3.jpg 1x, ./images/mobile/review3@2x.jpg 2x, ./images/mobile/review3@3x.jpg 3x" 
-        src="./images/mobile/review3.jpg" 
-        class="reviews-circle"
-        alt="other girl">
+          srcset="
+            ./images/mobile/review3.jpg    1x,
+            ./images/mobile/review3@2x.jpg 2x,
+            ./images/mobile/review3@3x.jpg 3x
+          "
+          src="./images/mobile/review3.jpg"
+          class="reviews-circle"
+          alt="other girl"
+        />
         <div class="review-box">
           <p class="review-text">
-            Ice cream is my passion! I love your chocolate hazelnut ice cream! 
-            And I really like the excellent service - always served politely 
-            and quickly!
+            Ice cream is my passion! I love your chocolate hazelnut ice cream!
+            And I really like the excellent service - always served politely and
+            quickly!
           </p>
         </div>
         <h3 class="review-title">Emily, Los Angeles</h3>
@@ -455,73 +502,99 @@
           <li class="contacts-list__item">
             <p class="contacts-representative">Caffee</p>
             <h3 class="contacts-title">Chicago</h3>
-            <p class="contacts-address">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
-            <hr >
+            <p class="contacts-address">
+              10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+            </p>
+            <hr />
             <div class="week">
               <p class="days">Monday - Friday</p>
               <p class="times">06:00 AM - 10:00 PM</p>
               <p class="days">Saturday - Sunday</p>
               <p class="times">08:00 AM - 16:00 PM</p>
             </div>
-            <hr >
-            <a class="communication" href="tel:+610383766284">+61(0) 383 766 284</a>
-            <a class="communication" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            <hr />
+            <a class="communication" href="tel:+610383766284"
+              >+61(0) 383 766 284</a
+            >
+            <a class="communication" href="mailto:noreply@envato.com"
+              >noreply@envato.com</a
+            >
           </li>
           <li class="contacts-list__item">
             <p class="contacts-representative">Foodtruck</p>
             <h3 class="contacts-title">Los Angeles</h3>
-            <p class="contacts-address">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
-            <hr >
+            <p class="contacts-address">
+              1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+            </p>
+            <hr />
             <div class="week">
               <p class="days">Monday - Friday</p>
               <p class="times">06:00 AM - 10:00 PM</p>
               <p class="days">Saturday - Sunday</p>
               <p class="times">08:00 AM - 16:00 PM</p>
             </div>
-            <hr >
-            <a class="communication" href="tel:+610383766284">+61(0) 383 766 284</a>
-            <a class="communication" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            <hr />
+            <a class="communication" href="tel:+610383766284"
+              >+61(0) 383 766 284</a
+            >
+            <a class="communication" href="mailto:noreply@envato.com"
+              >noreply@envato.com</a
+            >
           </li>
           <li class="contacts-list__item">
             <p class="contacts-representative">Caffee</p>
             <h3 class="contacts-title">New York</h3>
-            <p class="contacts-address">726 Sterling Pl, Brooklyn, NY 11222, USA</p>
-            <hr >
+            <p class="contacts-address">
+              726 Sterling Pl, Brooklyn, NY 11222, USA
+            </p>
+            <hr />
             <div class="week">
               <p class="days">Monday - Friday</p>
               <p class="times">06:00 AM - 10:00 PM</p>
               <p class="days">Saturday - Sunday</p>
               <p class="times">08:00 AM - 16:00 PM</p>
             </div>
-            <hr >
-            <a class="communication" href="tel:+610383766284">+61(0) 383 766 284</a>
-            <a class="communication" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            <hr />
+            <a class="communication" href="tel:+610383766284"
+              >+61(0) 383 766 284</a
+            >
+            <a class="communication" href="mailto:noreply@envato.com"
+              >noreply@envato.com</a
+            >
           </li>
         </ul>
         <div class="contacts-button-thumb">
-          <button type="button" class="button yellow-btn contacts-btn" location-modal-open>
+          <button
+            type="button"
+            class="button yellow-btn contacts-btn"
+            location-modal-open
+          >
             Our Locations
             <svg width="12" height="12">
               <use href="./images/icons.svg#icon-arrow-right"></use>
             </svg>
-          </button>      
-          <button type="button" class="button green-btn contacts-btn" franchise-modal-open>
+          </button>
+          <button
+            type="button"
+            class="button green-btn contacts-btn"
+            franchise-modal-open
+          >
             Franchise
             <svg width="12" height="12">
               <use href="./images/icons.svg#icon-arrow-right"></use>
             </svg>
-          </button>  
-        </div> 
-      </div>   
+          </button>
+        </div>
+      </div>
     </section>
     <div class="backdrop is-hidden" data-madal-buy>
-      <div class="modal-buy card-modal" >
+      <div class="modal-buy card-modal">
         <button class="mobile-btn close-btn" buy-modal-close>
           <svg class="modal-product__close-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h3 class="modal-buy__title modal-title">Buy now</h3>        
+        <h3 class="modal-buy__title modal-title">Buy now</h3>
         <ul class="product-list list list-modal">
           <li class="product-list__item item-modal">
             <div class="product-card-modal ice-cream-modal">
@@ -530,8 +603,8 @@
                 src="./images/mobile/ice-cream-ellips.jpg"
                 class="img-modal"
                 alt=""
-              >
-              <h3 class="product-card__title title-modal">Ice Cream</h3>              
+              />
+              <h3 class="product-card__title title-modal">Ice Cream</h3>
             </div>
           </li>
           <li class="product-list__item item-modal">
@@ -541,8 +614,8 @@
                 src="./images/mobile/ice-coffee.jpg"
                 class="img-modal"
                 alt=""
-              >
-              <h3 class="product-card__title title-modal">Ice Coffee</h3>              
+              />
+              <h3 class="product-card__title title-modal">Ice Coffee</h3>
             </div>
           </li>
           <li class="product-list__item item-modal">
@@ -552,38 +625,76 @@
                 src="./images/mobile/milkshake.jpg"
                 class="img-modal"
                 alt=""
-              >
-              <h3 class="product-card__title title-modal">Milkshakes</h3>              
+              />
+              <h3 class="product-card__title title-modal">Milkshakes</h3>
             </div>
           </li>
-        </ul>        
+        </ul>
         <form class="contact-form form-buy">
-          <input type="text" placeholder="Name" class="contact-form__text form-buy">
-          <input type="text" placeholder="Phone" class="contact-form__text form-buy">
-          <textarea name="comment" id="comment-buy"  placeholder="Comment" class="contact-form__text area"></textarea>
-          <button type="submit" class="form-btn yellow-btn form-buy">Submit</button>
+          <input
+            type="text"
+            placeholder="Name"
+            class="contact-form__text form-buy"
+          />
+          <input
+            type="text"
+            placeholder="Phone"
+            class="contact-form__text form-buy"
+          />
+          <textarea
+            name="comment"
+            id="comment-buy"
+            placeholder="Comment"
+            class="contact-form__text area"
+          ></textarea>
+          <button type="submit" class="form-btn yellow-btn form-buy">
+            Submit
+          </button>
         </form>
       </div>
     </div>
     <div class="backdrop is-hidden" data-madal-franchise>
-      <div class="modal-buy card-modal" >
+      <div class="modal-buy card-modal">
         <button class="mobile-btn close-btn" franchise-modal-close>
           <svg class="modal-product__close-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h3 class="modal-buy__title modal-title franchise-title">Thank you for your interest in owning an Ice Cream shop</h3>        
-        <p class="information">Due to the overwhelming volume of franchise requests
-           we are not accepting new franchisee applications at this time. Once the 
-           application process resumes, we will contact you for further information. 
-           Please fill out the contact information below and we will reach out for 
-           additional information. We appreciate your patience.</p>    
+        <h3 class="modal-buy__title modal-title franchise-title">
+          Thank you for your interest in owning an Ice Cream shop
+        </h3>
+        <p class="information">
+          Due to the overwhelming volume of franchise requests we are not
+          accepting new franchisee applications at this time. Once the
+          application process resumes, we will contact you for further
+          information. Please fill out the contact information below and we will
+          reach out for additional information. We appreciate your patience.
+        </p>
         <form class="contact-form form-buy">
-          <input type="text" placeholder="Name" class="contact-form__text form-buy">
-          <input type="text" placeholder="Phone" class="contact-form__text form-buy">
-          <input type="text" placeholder="Email" class="contact-form__text form-buy">
-          <textarea name="comment" id="comment-franchise"  placeholder="Comment" class="contact-form__text area"></textarea>
-          <button type="submit" class="form-btn yellow-btn form-buy">Submit</button>
+          <input
+            type="text"
+            placeholder="Name"
+            class="contact-form__text form-buy"
+          />
+          <input
+            type="text"
+            placeholder="Phone"
+            class="contact-form__text form-buy"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            class="contact-form__text form-buy"
+          />
+          <textarea
+            name="comment"
+            id="comment-franchise"
+            placeholder="Comment"
+            class="contact-form__text area"
+          ></textarea>
+          <button type="submit" class="form-btn yellow-btn form-buy">
+            Submit
+          </button>
         </form>
       </div>
     </div>
@@ -596,46 +707,65 @@
         </button>
         <h3 class="modal-about__title modal-title">Our Locations</h3>
         <div class="map">
-          <img src="./images/mobile/map.jpg" alt="location">
+          <img src="./images/mobile/map.jpg" alt="location" />
         </div>
-        <button type="button" class="form-btn yellow-btn btn-location">Open map</button>
+        <button type="button" class="form-btn yellow-btn btn-location">
+          Open map
+        </button>
       </div>
     </div>
     <footer class="odd container footer">
       <div class="footer-content-thumb">
         <div class="footer-title-thumb">
-          <p class="title-first-line title-odd footer-title-first-line">homemade ice cream made</p>
+          <p class="title-first-line title-odd footer-title-first-line">
+            homemade ice cream made
+          </p>
           <p class="footer-title">with passion</p>
         </div>
         <div class="footer-contacts-thumb">
           <ul class="footer-social__list list">
             <li class="footer-social-list__item">
-              <a class="social-list__link link" href="https://github.com/" target="_blank"
+              <a
+                class="social-list__link link"
+                href="https://github.com/"
+                target="_blank"
                 ><svg class="social-list__icon icons" width="20" height="20">
                   <use href="./images/icons.svg#icon-github"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-list__item">
-              <a class="social-list__link link" href="https://web.telegram.org/k/" target="_blank"
+              <a
+                class="social-list__link link"
+                href="https://web.telegram.org/k/"
+                target="_blank"
                 ><svg class="social-list__icon icons" width="20" height="20">
                   <use href="./images/icons.svg#icon-telegram"></use>
                 </svg>
               </a>
-            </li>        
+            </li>
             <li class="footer-social-list__item">
-              <a class="social-list__link link" href="https://uk-ua.facebook.com/" target="_blank"
+              <a
+                class="social-list__link link"
+                href="https://uk-ua.facebook.com/"
+                target="_blank"
                 ><svg class="social-list__icon icons" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
-            </li>        
+            </li>
           </ul>
-          <a href="tel:+610383766284" class="link footer-link"><span class="footer-address-text">Feel free to contact </span><span class="footer-address-phone">+61 (0) 383 766 284</span></a>
+          <a href="tel:+610383766284" class="link footer-link"
+            ><span class="footer-address-text">Feel free to contact </span
+            ><span class="footer-address-phone">+61 (0) 383 766 284</span></a
+          >
         </div>
-      </div>           
-      <hr class="footer-line">
-      <p class="footer-text">© 2022 - IceCream. <span class="footer-second-line">All Rights Reserved.</span></p>
+      </div>
+      <hr class="footer-line" />
+      <p class="footer-text">
+        © 2022 - IceCream.
+        <span class="footer-second-line">All Rights Reserved.</span>
+      </p>
     </footer>
     <script src="./js/gallery.js"></script>
     <script src="./js/modal-about.js"></script>
