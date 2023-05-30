@@ -1,35 +1,34 @@
-.contacts{
-  position:relative;
+.contacts {
+  position: relative;
 }
-.contacts-thumb{
+.contacts-thumb {
   position: absolute;
-  top: -352px; 
+  top: -352px;
   width: 280px;
   left: 50%;
   transform: translateX(-50%);
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     top: -300px;
     width: 100%;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     top: -128px;
     width: 100%;
   }
- 
 }
 
 .contacts-list {
   margin-bottom: 20px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
@@ -40,39 +39,39 @@
   border-radius: 24px;
   padding: 40px 32px 24px;
   margin-bottom: 24px;
- 
+
   background-color: var(--contrast-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 224px;
     margin-bottom: 0;
     padding: 40px 24px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     width: 368px;
     margin-bottom: 0;
     padding: 40px;
   }
 }
 
-.contacts-list__item > hr{
+.contacts-list__item > hr {
   margin-bottom: 24px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 32px;
   }
 }
 .contacts-list__item:not(:last-child) {
   margin-bottom: 16px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
     margin-right: 16px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-right: 32px;
   }
@@ -87,7 +86,7 @@
 
   font-family: var(--main-font-family);
   font-style: normal;
-  @include font(12px,500,14px);
+  @include font(12px, 500, 14px);
   text-transform: uppercase;
 
   display: flex;
@@ -97,140 +96,138 @@
 
   color: var(--text-color);
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 4px 10px;
     margin-bottom: 32px;
 
-    @include font(16px,500,22px);
+    @include font(16px, 500, 22px);
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     padding: 4px 14px;
   }
 }
-
 
 .contacts-title {
   margin-bottom: 8px;
   font-family: var(--main-font-family);
   font-style: normal;
-  @include font(12px,500,22px);
+  @include font(12px, 500, 22px);
 
   letter-spacing: 0.04em;
 
   color: var(--text-color);
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 12px;
-    @include font(14px,500,26px);
+    @include font(14px, 500, 26px);
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 8px;
-    @include font(16px,500,30px);
+    @include font(16px, 500, 30px);
   }
 }
 
-.contacts-address{
+.contacts-address {
   margin-bottom: 24px;
   font-family: var(--main-font-family);
   font-style: normal;
-  @include font(12px,500,22px);
+  @include font(12px, 500, 22px);
 
   letter-spacing: 0.04em;
 
   color: var(--milk-card-bg-color);
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 32px;
-    @include font(14px,500,26px);
+    @include font(14px, 500, 26px);
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 32px;
-    @include font(16px,500,29px);
+    @include font(16px, 500, 29px);
   }
 }
 
-.week{
+.week {
   font-family: var(--main-font-family);
   font-style: normal;
-  @include font(12px,500,22px);
+  @include font(12px, 500, 22px);
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 32px;
-    @include font(14px,500,26px);
+    @include font(14px, 500, 26px);
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 32px;
-    @include font(16px,500,30px);
+    @include font(16px, 500, 30px);
   }
 }
-.days{
-  color: var(--text-color); 
+.days {
+  color: var(--text-color);
 }
 
-.times{
-  color: #ABABAB;
+.times {
+  color: #ababab;
 }
 
-.times:first-child{
-  @media screen and (min-width:1200px) {
+.times:first-child {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 12px;
   }
 }
 
-.communication{
+.communication {
   font-family: var(--main-font-family);
   font-style: normal;
-  @include font(12px,500,19px);
+  @include font(12px, 500, 19px);
 
   color: var(--text-color);
 
-  @media screen and (min-width:768px) {
-    /* margin-bottom: 4px; */
-    @include font(14px,500,21px);
+  @media screen and (min-width: 768px) {
+    @include font(14px, 500, 21px);
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 4px;
-    @include font(16px,500,24px);
+    @include font(16px, 500, 24px);
   }
 }
 
-.contacts-button-thumb{
-  @media screen and (min-width:768px) {
+.contacts-button-thumb {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
   }
 }
 
-.contacts-btn{
+.contacts-btn {
   margin-left: 50%;
   transform: translateX(-50%);
   @include font(12px, 600, 18px);
   text-align: center;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-left: 0;
     transform: none;
     @include font(14px, 600, 18px);
   }
 }
 
-.contacts-btn:first-child{
-  @media screen and (min-width:768px) {
+.contacts-btn:first-child {
+  @media screen and (min-width: 768px) {
     margin-right: 16px;
   }
 }
 
-.contacts-btn.yellow-btn{
+.contacts-btn.yellow-btn {
   margin-bottom: 16px;
-  
+
   color: var(--text-color);
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 }

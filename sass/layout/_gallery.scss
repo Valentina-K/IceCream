@@ -1,85 +1,65 @@
-.gallery-container{
+.gallery-container {
   position: relative;
-  /* padding-bottom: 80px;
-    @media screen and (min-width:768px) {
-      padding-bottom: 100px;
-  } 
-    @media screen and (min-width:1200px) {
-       padding-bottom: 140px;
-  }    */    
 }
 
 .gallery-thumb {
-    /* position: relative; */
-    position: absolute;
-    left: 0;
-    overflow: hidden;
-    /* margin-top: -36px; */
-    top: -32px;
-    width: 100%;
-    height: 130px;
-    display: inline-block;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  top: -32px;
+  width: 100%;
+  height: 130px;
+  display: inline-block;
 
-    @media screen and (min-width:480px) {
-      top: -50px;
-      height: 204px;
+  @media screen and (min-width: 480px) {
+    top: -50px;
+    height: 204px;
   }
 
-    @media screen and (min-width:768px) {
-      top: -144px;
-      height: 327px;
+  @media screen and (min-width: 768px) {
+    top: -144px;
+    height: 327px;
   }
 
-    @media screen and (min-width:1200px) {
-      top: -98px;
-      height: 422px;
+  @media screen and (min-width: 1200px) {
+    top: -98px;
+    height: 422px;
   }
 }
-  .gallery-thumb__item {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;   
-  } 
+.gallery-thumb__item {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-  .gallery-img{    
-    border-radius: 8px;
-    opacity: 0;
-    
-    object-fit: cover; 
+.gallery-img {
+  border-radius: 8px;
+  opacity: 0;
+  object-fit: cover;
+}
+
+.gallery-img.active {
+  opacity: 1;
+  animation-name: animationImg;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  z-index: 666;
+}
+
+@keyframes animationImg {
+  from {
+    margin-left: 100%;
   }
 
-  .gallery-img.active{
-    opacity: 1;
-    animation-name: animationImg;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);
-    z-index: 666;
+  50% {
+    margin-left: 0;
   }
 
-  @keyframes animationImg {
-    from {
-      margin-left: 100%;
-    }
-  
-    50%{
-        margin-left: 0;
-    }
-  
-    to {
-        margin-left: -100%;
-    }
+  to {
+    margin-left: -100%;
   }
-
- /* <div>
-    Первый блок
-</div>
-<div style="position:relative;">
-    <div style="position: absolute; top: -100px; z-index: 1;">
-        Второй блок
-    </div>
-</div> */
-  
+}

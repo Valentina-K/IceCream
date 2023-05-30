@@ -3,7 +3,7 @@
     opacity: 0;
   }
 
-  50%{
+  50% {
     opacity: 0.5;
   }
 
@@ -25,14 +25,13 @@
 }
 .gallery {
   display: none;
-  /* padding-top: 176px; */
 }
 .gallery.active {
   display: block;
   margin-bottom: 12px;
   animation: fadeImg 0.9s;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 32px;
   }
 }
