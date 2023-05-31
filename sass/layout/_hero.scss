@@ -1,26 +1,26 @@
-.hero{
+.hero {
   position: relative;
   padding-bottom: 236px;
   padding-top: 12px;
 
-  @media screen and (min-width:480px) {
+  @media screen and (min-width: 480px) {
     padding-bottom: 150px;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-bottom: 24px;
     padding-top: 20px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     padding-bottom: 102px;
     padding-top: 8px;
   }
 }
 
-.hero-main-thumb{
-  @media screen and (min-width:768px) {
-    @include flex(flex,space-between,baseline);
+.hero-main-thumb {
+  @media screen and (min-width: 768px) {
+    @include flex(flex, space-between, baseline);
   }
 }
 
@@ -35,7 +35,7 @@
 
   color: var(--contrast-color);
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     width: 367px;
     @include font(38px, 400, 48px);
   }
@@ -44,7 +44,7 @@
 .big {
   @include font(32px, 400, 33px);
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     @include font(38px, 400, 48px);
   }
 }
@@ -71,99 +71,99 @@
   text-decoration: underline;
   color: var(--accent-color);
 
-  &:hover{
-    color:var(--hover-color);
+  &:hover {
+    color: var(--hover-color);
   }
 
-  &:focus{
+  &:focus {
     color: var(--contrast-color);
   }
 
-  &:disabled{
-    color:var(--disable-color);
+  &:disabled {
+    color: var(--disable-color);
   }
 }
 
-.hero-text-thumb{
-  display:none;
-  @media screen and (min-width:768px) {
+.hero-text-thumb {
+  display: none;
+  @media screen and (min-width: 768px) {
     display: block;
     width: 167px;
     margin-top: 46px;
     margin-left: 184px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     width: 200px;
     margin-top: 112px;
     margin-left: 258px;
   }
 }
 
-.hero-text{
-  @media screen and (min-width:768px) {
+.hero-text {
+  @media screen and (min-width: 768px) {
     margin-bottom: 12px;
     font-family: var(--main-font-family);
     font-style: normal;
-    @include font(12px,400,17px);
+    @include font(12px, 400, 17px);
 
     color: var(--contrast-color);
   }
 
-  @media screen and (min-width:1200px) {
-    @include font(14px,400,20px);
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 400, 20px);
     margin-bottom: 24px;
   }
 }
 
-.hero-main-right{
+.hero-main-right {
   display: none;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 }
 
-.hero-text-number{
+.hero-text-number {
   font-family: var(--main-font-family);
   font-style: normal;
-  @include font(28px,900,34px);
+  @include font(28px, 900, 34px);
   letter-spacing: 0.04em;
   text-align: right;
 
   color: var(--text-color);
 
-  @media screen and (min-width:1200px) {
-    @include font(46px,900,56px);
+  @media screen and (min-width: 1200px) {
+    @include font(46px, 900, 56px);
   }
 }
 
-.hero-text-description{
+.hero-text-description {
   font-family: var(--main-font-family);
   font-style: normal;
-  @include font(8px,400,10px);
+  @include font(8px, 400, 10px);
   text-align: right;
 
   color: var(--contrast-color);
 
-  @media screen and (min-width:1200px) {
-    @include font(14px,400,17px);
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 400, 17px);
   }
 }
 
-.hero-text-description:nth-child(n+1){
+.hero-text-description:nth-child(n + 1) {
   margin-bottom: 20px;
 }
 
-.hero-arrow{
+.hero-arrow {
   fill: var(--contrast-color);
 }
 
-.hero-modal-btn{
+.hero-modal-btn {
   padding: 0;
 }
 
-.points{
+.points {
   width: 100%;
   height: 50px;
   left: 0;
@@ -171,60 +171,60 @@
   bottom: 0;
   animation-duration: 250ms;
   animation-name: show_img;
-  background-image: url('./images/mobile/points320.png');
+  background-image: url("../images/mobile/points320.png");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   pointer-events: none;
 
-  @media screen and (min-width:480px) {
+  @media screen and (min-width: 480px) {
     width: 330px;
     height: 52px;
     right: 0;
     left: auto;
-    background-image: url('./images/mobile/points480.png');
+    background-image: url("../images/mobile/points480.png");
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 100%;
     height: 68px;
-    background-image: url('./images/tablet/points768.png');
+    background-image: url("../images/tablet/points768.png");
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     width: 100%;
     height: 384px;
-    background-image: url('./images/desktop/points1200.png');
+    background-image: url("../images/desktop/points1200.png");
   }
 }
 
-.hero-images__ice{
+.hero-images__ice {
   position: absolute;
   left: 26%;
   bottom: 0;
   animation-duration: 250ms;
   animation-name: show_img;
 
-  @media screen and (min-width: 480px)  {
+  @media screen and (min-width: 480px) {
     width: 218px;
     bottom: 0;
     left: auto;
     right: 20px;
   }
 
-  @media screen and (min-width:768px) {
-    left:408px;
+  @media screen and (min-width: 768px) {
+    left: 408px;
     width: 268px;
   }
 
-  @media screen and (min-width:1200px) {
-    left:652px;
+  @media screen and (min-width: 1200px) {
+    left: 652px;
     width: 456px;
   }
 }
 
-.hero-images__lot-of-ice-cream{
+.hero-images__lot-of-ice-cream {
   display: none;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
     left: 32px;
@@ -235,50 +235,50 @@
     animation-name: show_img;
     border-radius: 100%;
 
-    background-image: url(./images/tablet/lot-of-ice-Cream.jpg);
+    background-image: url(../images/tablet/lot-of-ice-Cream.jpg);
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(./images/tablet/lot-of-ice-Cream@2x.jpg);
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/lot-of-ice-Cream@2x.jpg);
     }
 
     @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
-    background-image: url(./images/tablet/lot-of-ice-Cream@3x.jpg);
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/tablet/lot-of-ice-Cream@3x.jpg);
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       left: 16px;
       bottom: 65px;
       width: 225px;
       height: 225px;
-      background-image: url(./images/desktop/lot-of-ice-Cream.jpg);
+      background-image: url(../images/desktop/lot-of-ice-Cream.jpg);
       background-repeat: no-repeat;
       @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(./images/desktop/lot-of-ice-Cream@2x.jpg);
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/lot-of-ice-Cream@2x.jpg);
       }
 
       @media (min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
-      background-image: url(./images/desktop/lot-of-ice-Cream@3x.jpg);
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url(../images/desktop/lot-of-ice-Cream@3x.jpg);
       }
     }
   }
 }
 
 @keyframes show_img {
-  from{
-    transform: scale(0,0);
+  from {
+    transform: scale(0, 0);
   }
-  to{
-    transform: scale(1,1);
+  to {
+    transform: scale(1, 1);
   }
-  50%{
-    transform: scale(0.5,0.5);
-  }  
+  50% {
+    transform: scale(0.5, 0.5);
+  }
 }
