@@ -1,6 +1,6 @@
 (() => {
-    const closeModalBtn = document.querySelector("[buy-modal-close]");
-    const openModalBtn = document.querySelectorAll("[buy-modal-open]")
+    const closeModalBtn = document.querySelector("[data-buy-modal-close]");
+    const openModalBtn = document.querySelectorAll("[data-buy-modal-open]")
     const modal_buy = document.querySelector("[data-madal-buy]");
 
     openModalBtn.forEach(button=>button.addEventListener("click", toggleModal));

@@ -1,6 +1,6 @@
 (() => {
-    const closeModalBtn = document.querySelector("[franchise-modal-close]");
-    const openModalBtn = document.querySelector("[franchise-modal-open]");
+    const closeModalBtn = document.querySelector("[data-franchise-modal-close]");
+    const openModalBtn = document.querySelector("[data-franchise-modal-open]");
     const modal_franchise= document.querySelector("[data-madal-franchise]");
 
     openModalBtn.addEventListener("click",toggleModal);

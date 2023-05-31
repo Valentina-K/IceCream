@@ -58,7 +58,7 @@
             <button
               type="button"
               class="button yellow-btn mobile-menu-button tablet-btn"
-              buy-modal-open
+              data-buy-modal-open
             >
               Buy now
             </button>
@@ -101,7 +101,7 @@
           <button
             type="button"
             class="button yellow-btn mobile-menu-button mobile-button"
-            buy-modal-open
+            data-buy-modal-open
           >
             Buy now
           </button>
@@ -130,7 +130,7 @@
         <button
           type="button"
           class="modal-open-btn hero-modal-btn"
-          arrow-modal-open
+          data-arrow-modal-open
         >
           <svg width="40" height="16" class="hero-arrow">
             <use href="./images/icons.svg#icon-arrow"></use>
@@ -163,7 +163,7 @@
               Soft ice cream with a delicate taste. Made with milk, cream, sugar
               and natural stabilizer
             </p>
-            <button type="button" class="modal-open-btn" arrow-modal-open>
+            <button type="button" class="modal-open-btn" data-arrow-modal-open>
               <svg width="40" height="16" class="product-card__arrow">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -179,7 +179,7 @@
               Fragrant invigorating drink created from 100% natural ingredients
               without the use of preservatives and flavor enhancers
             </p>
-            <button type="button" class="modal-open-btn" arrow-modal-open>
+            <button type="button" class="modal-open-btn" data-arrow-modal-open>
               <svg width="40" height="16" class="product-card__arrow">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -195,7 +195,7 @@
               Sweet drinks based on milk and ice cream, supplemented with
               syrups, fruits, berries and other sweets of your choice
             </p>
-            <button type="button" class="modal-open-btn" arrow-modal-open>
+            <button type="button" class="modal-open-btn" data-arrow-modal-open>
               <svg width="40" height="16" class="product-card__arrow">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -205,7 +205,7 @@
       </ul>
       <div class="backdrop is-hidden" data-modal-products>
         <div class="modal-product card-modal">
-          <button class="mobile-btn close-btn" products-modal-close>
+          <button class="mobile-btn close-btn" data-products-modal-close>
             <svg class="modal-product__close-icon" width="20" height="20">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -320,7 +320,10 @@
           <p class="about-text text-two-pice">
             This is enough to choose ice cream and coffee for any mood!
           </p>
-          <button class="button yellow-btn about-btn btn-icon" about-modal-open>
+          <button
+            class="button yellow-btn about-btn btn-icon"
+            data-about-modal-open
+          >
             Read more
             <svg width="12" height="12">
               <use href="./images/icons.svg#icon-arrow-right"></use>
@@ -330,7 +333,7 @@
       </div>
       <div class="backdrop is-hidden" data-madal-about>
         <div class="modal-about card-modal">
-          <button class="mobile-btn close-btn" about-modal-close>
+          <button class="mobile-btn close-btn" data-about-modal-close>
             <svg class="modal-product__close-icon" width="20" height="20">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -567,7 +570,7 @@
           <button
             type="button"
             class="button yellow-btn contacts-btn"
-            location-modal-open
+            data-location-modal-open
           >
             Our Locations
             <svg width="12" height="12">
@@ -577,7 +580,7 @@
           <button
             type="button"
             class="button green-btn contacts-btn"
-            franchise-modal-open
+            data-franchise-modal-open
           >
             Franchise
             <svg width="12" height="12">
@@ -589,7 +592,7 @@
     </section>
     <div class="backdrop is-hidden" data-madal-buy>
       <div class="modal-buy card-modal">
-        <button class="mobile-btn close-btn" buy-modal-close>
+        <button class="mobile-btn close-btn" data-buy-modal-close>
           <svg class="modal-product__close-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -655,7 +658,7 @@
     </div>
     <div class="backdrop is-hidden" data-madal-franchise>
       <div class="modal-buy card-modal">
-        <button class="mobile-btn close-btn" franchise-modal-close>
+        <button class="mobile-btn close-btn" data-franchise-modal-close>
           <svg class="modal-product__close-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -700,7 +703,7 @@
     </div>
     <div class="backdrop is-hidden" data-madal-location>
       <div class="modal-about card-modal">
-        <button class="mobile-btn close-btn" location-modal-close>
+        <button class="mobile-btn close-btn" data-location-modal-close>
           <svg class="modal-product__close-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
