@@ -58,11 +58,11 @@ ul {
 
 a {
   text-decoration: none;
-  cursor: url("./images/cursor.svg"), pointer;
+  cursor: url("../images/cursor.svg"), pointer;
 }
 
 button {
-  cursor: url("./images/cursor.svg"), pointer;
+  cursor: url("../images/cursor.svg"), pointer;
 }
 
 .container {
