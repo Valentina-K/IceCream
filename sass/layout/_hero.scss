@@ -237,13 +237,13 @@
 
     background-image: url(../images/tablet/lot-of-ice-Cream.jpg);
     background-repeat: no-repeat;
-    @media (min-device-pixel-ratio: 2),
+    @media only screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/tablet/lot-of-ice-Cream@2x.jpg);
     }
 
-    @media (min-device-pixel-ratio: 3),
+    @media only screen and (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
       background-image: url(../images/tablet/lot-of-ice-Cream@3x.jpg);
@@ -256,13 +256,13 @@
       height: 225px;
       background-image: url(../images/desktop/lot-of-ice-Cream.jpg);
       background-repeat: no-repeat;
-      @media (min-device-pixel-ratio: 2),
+      @media only screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url(../images/desktop/lot-of-ice-Cream@2x.jpg);
       }
 
-      @media (min-device-pixel-ratio: 3),
+      @media only screen and (min-device-pixel-ratio: 3),
         (min-resolution: 288dpi),
         (min-resolution: 3dppx) {
         background-image: url(../images/desktop/lot-of-ice-Cream@3x.jpg);
